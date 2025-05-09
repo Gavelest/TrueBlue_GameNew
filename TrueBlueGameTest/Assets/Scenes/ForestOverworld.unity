@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Tree_2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -224,7 +228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7366592775369661950, guid: 5e31ba57f429c384093f51888ba5438e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3
+      value: 3.23
       objectReference: {fileID: 0}
     - target: {fileID: 7366592775369661950, guid: 5e31ba57f429c384093f51888ba5438e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -262,6 +266,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rusted_Truck
       objectReference: {fileID: 0}
+    - target: {fileID: 9171167905809214185, guid: 5e31ba57f429c384093f51888ba5438e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e31ba57f429c384093f51888ba5438e, type: 3}
@@ -276,6 +284,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -344,9 +356,17 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 288873978, guid: 083bcf39d606c0741974111bef36915b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1300409740996803196, guid: 083bcf39d606c0741974111bef36915b, type: 3}
       propertyPath: m_Name
       value: Dingo_Walker
+      objectReference: {fileID: 0}
+    - target: {fileID: 1300409740996803196, guid: 083bcf39d606c0741974111bef36915b, type: 3}
+      propertyPath: m_TagString
+      value: enemy
       objectReference: {fileID: 0}
     - target: {fileID: 1819501981981614278, guid: 083bcf39d606c0741974111bef36915b, type: 3}
       propertyPath: m_RootOrder
@@ -354,15 +374,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1819501981981614278, guid: 083bcf39d606c0741974111bef36915b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.000003
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 1819501981981614278, guid: 083bcf39d606c0741974111bef36915b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.04975891
+      value: 1.61
       objectReference: {fileID: 0}
     - target: {fileID: 1819501981981614278, guid: 083bcf39d606c0741974111bef36915b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 125.837425
+      value: 123.4
       objectReference: {fileID: 0}
     - target: {fileID: 1819501981981614278, guid: 083bcf39d606c0741974111bef36915b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -406,6 +426,10 @@ PrefabInstance:
     - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
@@ -477,6 +501,10 @@ PrefabInstance:
     - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
@@ -605,6 +633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
@@ -676,6 +708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
@@ -690,6 +726,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -909,6 +949,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Tree_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -979,6 +1023,10 @@ PrefabInstance:
     - target: {fileID: 1060042468913722776, guid: e553e34489d58f141b45255baa8fb86a, type: 3}
       propertyPath: m_Name
       value: Log
+      objectReference: {fileID: 0}
+    - target: {fileID: 1060042468913722776, guid: e553e34489d58f141b45255baa8fb86a, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7624725085591844203, guid: e553e34489d58f141b45255baa8fb86a, type: 3}
       propertyPath: m_RootOrder
@@ -1107,6 +1155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
@@ -1121,6 +1173,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -1193,6 +1249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Tree_2 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -1263,6 +1323,10 @@ PrefabInstance:
     - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
@@ -1391,6 +1455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
@@ -1405,6 +1473,10 @@ PrefabInstance:
     - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
@@ -1476,6 +1548,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -1604,6 +1680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
@@ -1618,6 +1698,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -1746,6 +1830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
@@ -1817,6 +1905,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Road_Sign1
       objectReference: {fileID: 0}
+    - target: {fileID: 7521105548115978228, guid: d9508da81c0f8684d9c13530540ced73, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d9508da81c0f8684d9c13530540ced73, type: 3}
@@ -1831,6 +1923,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -1891,6 +1987,75 @@ PrefabInstance:
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+--- !u!1 &953747740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1300409740996803196, guid: 083bcf39d606c0741974111bef36915b, type: 3}
+  m_PrefabInstance: {fileID: 46357858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &953747741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953747740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 076d4bb63e270d9428a6471100fe2de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 953747742}
+  player: {fileID: 0}
+  Ground:
+    serializedVersion: 2
+    m_Bits: 64
+  Player:
+    serializedVersion: 2
+    m_Bits: 128
+  walkPoint: {x: 0, y: 0, z: 0}
+  walkPointRange: 50
+  sightRange: 30
+  attackRange: 3
+  playerInSightRange: 0
+  playerInAttackRange: 0
+--- !u!195 &953747742
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953747740}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 14
+  m_Acceleration: 261.71
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!54 &953747745
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953747740}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1001 &958877509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1902,6 +2067,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -2030,6 +2199,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Potted_Dead_Plant
       objectReference: {fileID: 0}
+    - target: {fileID: 8208525004622607577, guid: dd4f18dc3a7b7ce4493909aef05e7d0a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: dd4f18dc3a7b7ce4493909aef05e7d0a, type: 3}
@@ -2101,6 +2274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire_Pit_Billy_Boil
       objectReference: {fileID: 0}
+    - target: {fileID: 8660798295069748506, guid: f0c55e1f20c3a5449a810df4407abd06, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: f0c55e1f20c3a5449a810df4407abd06, type: 3}
@@ -2115,6 +2292,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -2187,6 +2368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Tree_2 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -2257,6 +2442,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -2385,6 +2574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
@@ -2456,6 +2649,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
@@ -2470,6 +2667,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -2541,6 +2742,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -2618,7 +2823,7 @@ GameObject:
   - component: {fileID: 1431194485}
   - component: {fileID: 1431194484}
   - component: {fileID: 1431194483}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Fence_Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2715,6 +2920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Tree_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -2785,6 +2994,10 @@ PrefabInstance:
     - target: {fileID: 3189122255136533759, guid: 94eb3bd941837854594c0f2fdb54de42, type: 3}
       propertyPath: m_Name
       value: Water_Tank_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189122255136533759, guid: 94eb3bd941837854594c0f2fdb54de42, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4931290508156463973, guid: 94eb3bd941837854594c0f2fdb54de42, type: 3}
       propertyPath: m_RootOrder
@@ -2917,6 +3130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
@@ -2931,6 +3148,10 @@ PrefabInstance:
     - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
@@ -3051,6 +3272,10 @@ PrefabInstance:
     - target: {fileID: 1020195387515601329, guid: b260c986128748843a5c7e6e4cddfdff, type: 3}
       propertyPath: m_Name
       value: Windmill
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020195387515601329, guid: b260c986128748843a5c7e6e4cddfdff, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4787582859359133097, guid: b260c986128748843a5c7e6e4cddfdff, type: 3}
       propertyPath: m_RootOrder
@@ -3217,6 +3442,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Tree_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -3288,7 +3517,7 @@ GameObject:
   - component: {fileID: 1745043416}
   - component: {fileID: 1745043415}
   - component: {fileID: 1745043414}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tree_Line
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3385,6 +3614,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Tree_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
       value: 45
@@ -3455,6 +3688,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -3583,9 +3820,74 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_2 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8413089788063344057, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 165af7f16a130a842923fb08bd3de3c2, type: 3}
+--- !u!1 &1845921062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845921064}
+  - component: {fileID: 1845921063}
+  m_Layer: 0
+  m_Name: Navmesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1845921063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845921062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 192
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: 42622e35952e9c943a7629005eddc85e, type: 2}
+--- !u!4 &1845921064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845921062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -144.98735, y: -63.706474, z: 59.473736}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 59
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1858982627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3598,7 +3900,7 @@ GameObject:
   - component: {fileID: 1858982630}
   - component: {fileID: 1858982629}
   - component: {fileID: 1858982628}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3695,6 +3997,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Tree_2 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -3765,6 +4071,10 @@ PrefabInstance:
     - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
@@ -3837,6 +4147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dead_Tree_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -3904,9 +4218,21 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5038666727077746724, guid: 84cce498eeecd854988b446cce975d05, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5038666727081358625, guid: 84cce498eeecd854988b446cce975d05, type: 3}
       propertyPath: m_Name
-      value: Player Model 0605
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038666727081358625, guid: 84cce498eeecd854988b446cce975d05, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5038666727081358625, guid: 84cce498eeecd854988b446cce975d05, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5038666727081358626, guid: 84cce498eeecd854988b446cce975d05, type: 3}
       propertyPath: speed
@@ -3956,6 +4282,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5038666727091464938, guid: 84cce498eeecd854988b446cce975d05, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 84cce498eeecd854988b446cce975d05, type: 3}
@@ -3970,6 +4300,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -4041,6 +4375,10 @@ PrefabInstance:
     - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 952194560284974601, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1559456565839614896, guid: 573276ce2c177e744b616c6a976cb246, type: 3}
       propertyPath: m_RootOrder
@@ -4117,6 +4455,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water_Reserve
       objectReference: {fileID: 0}
+    - target: {fileID: 1310672000706690575, guid: 015333a439a328f4493e23227911e17d, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6375634930172222752, guid: 015333a439a328f4493e23227911e17d, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -4188,6 +4530,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1306feab7b168fc4ea37c66ce33a1bc4, type: 2}
+    - target: {fileID: 5742244251543850461, guid: d5ae0eef3115dd84c8295266c068feeb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8238370789136985359, guid: d5ae0eef3115dd84c8295266c068feeb, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -4248,6 +4594,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House_Ver1
       objectReference: {fileID: 0}
+    - target: {fileID: 8770244269385906809, guid: d5ae0eef3115dd84c8295266c068feeb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d5ae0eef3115dd84c8295266c068feeb, type: 3}
@@ -4262,6 +4612,10 @@ PrefabInstance:
     - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_Name
       value: Dead_Tree_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1703048073729128804, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5961788277658746085, guid: 4920e2fe1624cf0469ec43f65582bb6d, type: 3}
       propertyPath: m_RootOrder
@@ -4389,6 +4743,10 @@ PrefabInstance:
     - target: {fileID: 5717578267055994056, guid: 11ac85db9055def48b8d16001c1e8476, type: 3}
       propertyPath: m_Name
       value: Rock_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5717578267055994056, guid: 11ac85db9055def48b8d16001c1e8476, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
