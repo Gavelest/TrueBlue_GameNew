@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public CharacterController controller;
     public float speed = 12f;
     public float gravity = 9.81f;
+ 
 
     Vector3 velocity;
 
@@ -34,4 +35,5 @@ public class PlayerMovement : MonoBehaviour
         controller.Move(velocity * Time.deltaTime);
 
     }
+
 }
