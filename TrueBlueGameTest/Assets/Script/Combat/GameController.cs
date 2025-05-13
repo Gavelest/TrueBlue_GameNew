@@ -5,6 +5,13 @@ using UnityEngine.UI;
 public class GameController : MonoBehaviour
 {
 
+    void Start()
+    {
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+    }
 
     [SerializeField] private GameObject player = null;
     [SerializeField] private GameObject enemy = null;
@@ -116,6 +123,8 @@ public class GameController : MonoBehaviour
         }
 
     }
+
+    
 
 
 }
