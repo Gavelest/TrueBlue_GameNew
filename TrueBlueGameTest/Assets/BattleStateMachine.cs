@@ -105,7 +105,7 @@ public class BattleStateMachine : MonoBehaviour
         switch (HeroInput)
         {
             case (HeroGUI.ACTIVATE):
-                if(HerosToManage.Count > 0)
+               /* if(HerosToManage.Count > 0)
                 {
 
                     HerosToManage[0].transform.FindChild("Selector").gameObject.SetActive(true);
@@ -113,7 +113,7 @@ public class BattleStateMachine : MonoBehaviour
                     HeroInput = HeroGUI.WAITING;
 
                 }
-
+               */
 
             case (HeroGUI.WAITING):
                 break;
@@ -143,7 +143,7 @@ public class BattleStateMachine : MonoBehaviour
 
             EnemyStateMachine cur_enemy = enemy.GetComponent<EnemyStateMachine>();
 
-            Text buttonText = newButton.transform.FindChild("Text").gameObject.GetComponent<Text>();
+            Text buttonText = newButton.transform.Find("Text").gameObject.GetComponent<Text>();
             buttonText.text = cur_enemy.enemy.name;
 
             button.EnemyPrefab = enemy;
