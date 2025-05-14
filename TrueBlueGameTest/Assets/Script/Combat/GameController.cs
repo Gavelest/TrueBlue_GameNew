@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -104,8 +105,15 @@ public class GameController : MonoBehaviour
 
     private IEnumerator EnemyTurn()
     {
-
-        yield return new WaitForSeconds(3);
+        
+        
+            
+       
+        
+        
+            yield return new WaitForSeconds(3);
+        
+        
 
         int random = 0;
         random = Random.Range(1, 3);
