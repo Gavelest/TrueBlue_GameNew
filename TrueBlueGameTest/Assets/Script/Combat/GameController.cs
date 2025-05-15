@@ -105,12 +105,11 @@ public class GameController : MonoBehaviour
 
     private IEnumerator EnemyTurn()
     {
-        
-        
-            
+
+
        
-        
-        
+
+
             yield return new WaitForSeconds(3);
         
         
