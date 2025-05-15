@@ -20,6 +20,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private Slider enemyHealth = null;
     [SerializeField] private Button attackBtn = null;
     [SerializeField] private Button healBtn = null;
+    public int Health = 100;
 
     private bool isPlayerTurn = true;
 
@@ -31,6 +32,7 @@ public class GameController : MonoBehaviour
         {
 
             enemyHealth.value -= damage;
+            //Health -= damage;
 
         }
         else
@@ -51,6 +53,7 @@ public class GameController : MonoBehaviour
         {
 
             enemyHealth.value += amount;
+            //Health.value += amount;
 
         }
         else
@@ -132,6 +135,27 @@ public class GameController : MonoBehaviour
     }
 
     
+    void Update()
+    {
+
+        if(enemyHealth.value <=0)
+        {
+            Die();
+        }
+
+    }
+
+    void Die()
+    {
+
+        RestartScene();
+
+    }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(0);
+    }
 
 
 }
