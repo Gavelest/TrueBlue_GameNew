@@ -907,11 +907,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: b845a4bd-472e-4f7a-96be-53387cf2ae4b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: TrueBlueGameTest
+  organizationId: coragavin
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
