@@ -11,7 +11,7 @@ public class CameraController : MonoBehaviour {
         Vector3 pos = Vector3.Lerp(transform.position, player.position + offset + -transform.forward * followDistance, moveSpeed * Time.deltaTime);
         transform.position = pos;
 
-        transform.rotation = rotation;
+        //transform.rotation = rotation;
     }
 
 }
