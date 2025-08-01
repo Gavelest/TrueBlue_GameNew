@@ -16239,6 +16239,30 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1112988348}
   m_SourcePrefab: {fileID: 100100000, guid: 84cce498eeecd854988b446cce975d05, type: 3}
+--- !u!1 &2005995241 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5038666727081358625, guid: 84cce498eeecd854988b446cce975d05, type: 3}
+  m_PrefabInstance: {fileID: 2005995240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &2005995242 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5038666727077746726, guid: 84cce498eeecd854988b446cce975d05, type: 3}
+  m_PrefabInstance: {fileID: 2005995240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2005995243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005995241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52419c9e3e303984894248ed9ce05a08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 2005995242}
+  projectilePrefab: {fileID: 0}
 --- !u!4 &2016554788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6da5875e119cb1740bb3736e1e22ab73, type: 3}

@@ -5,10 +5,11 @@ using UnityEngine;
 public class Combat : MonoBehaviour
 {
 
+    [SerializeField] private Camera mainCamera;
 
-    public GameObject projectile;
-    private bool bulletCount = 6f;
-    private bool bulletMin = 1f;
+    [SerializeField] private GameObject projectilePrefab;
+    private float bulletCount = 6f;
+    private float bulletMin = 1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,20 +21,32 @@ public class Combat : MonoBehaviour
     {
         
        
+         if (Input.GetKeyDown(KeyCode.Mouse1))
+         {
+            GunShot();
+         }
+        
 
-        if (bulletCount < bulletMin)
+    }
+
+    void GunShot()
+    {
+
+         if (bulletCount < bulletMin)
         {
 
-
+                print("no bullets");
 
         }
-        else();
+        else
         {
 
-            if (Input.GetButtonDown(KeyCode.Mouse1));
-            Instantiate(projectile, transform.position, transform.rotation);
+            
+            var bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
 
         }
 
     }
+
+
 }
