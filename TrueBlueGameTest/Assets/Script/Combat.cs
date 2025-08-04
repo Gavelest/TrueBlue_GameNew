@@ -10,6 +10,9 @@ public class Combat : MonoBehaviour
     [SerializeField] private GameObject projectilePrefab;
     private float bulletCount = 6f;
     private float bulletMin = 1f;
+
+    public Vector3 worldPosition;
+    public Vector3 screenPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +44,9 @@ public class Combat : MonoBehaviour
         else
         {
 
-            Vector3 mousePos = Input.mousePosition;
+            screenPosition = Input.mousePosition;
+            worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+
 
             var bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
 
