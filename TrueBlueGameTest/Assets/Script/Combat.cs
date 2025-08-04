@@ -11,6 +11,8 @@ public class Combat : MonoBehaviour
     private float bulletCount = 6f;
     private float bulletMin = 1f;
 
+    private Vector3 playerPose;
+
     public Vector3 worldPosition;
     public Vector3 screenPosition;
     // Start is called before the first frame update
@@ -46,9 +48,9 @@ public class Combat : MonoBehaviour
 
             screenPosition = Input.mousePosition;
             worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
+            Vector3 playerAimDirection = worldPosition - playerPose;
 
-
-            var bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
+            var bullet = Instantiate(projectilePrefab, playerAimDirection, transform.rotation);
 
         }
 
