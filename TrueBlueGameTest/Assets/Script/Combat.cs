@@ -41,7 +41,8 @@ public class Combat : MonoBehaviour
         else
         {
 
-            
+            Vector3 mousePos = Input.mousePosition;
+
             var bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
 
         }

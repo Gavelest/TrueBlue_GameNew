@@ -16170,6 +16170,10 @@ PrefabInstance:
       propertyPath: RotationSpeed
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5038666727081358626, guid: 84cce498eeecd854988b446cce975d05, type: 3}
+      propertyPath: RotateTowardMouse
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5038666727081358627, guid: 84cce498eeecd854988b446cce975d05, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -16262,7 +16266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 2005995242}
-  projectilePrefab: {fileID: 0}
+  projectilePrefab: {fileID: 6563892281750420046, guid: bb8df44545b693048a9f67257eca3ce0, type: 3}
 --- !u!4 &2016554788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6da5875e119cb1740bb3736e1e22ab73, type: 3}
