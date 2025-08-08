@@ -15,6 +15,9 @@ public class Combat : MonoBehaviour
 
     public Vector3 worldPosition;
     public Vector3 screenPosition;
+
+    public float shootForce = 20f;
+    public float fireRate = 0.5f;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +53,9 @@ public class Combat : MonoBehaviour
             worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
             Vector3 playerAimDirection = worldPosition - playerPose;
 
-            var bullet = Instantiate(projectilePrefab, playerAimDirection, transform.rotation);
+            var bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
+
+            //bullet = transform.TransformDirection(new Vector3(0, 0, shootForce));
 
         }
 
