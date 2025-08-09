@@ -18,6 +18,9 @@ public class Combat : MonoBehaviour
 
     public float shootForce = 20f;
     public float fireRate = 0.5f;
+
+    public Rigidbody projectile;
+    public float speed = 20;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,14 +51,16 @@ public class Combat : MonoBehaviour
         }
         else
         {
-
             screenPosition = Input.mousePosition;
-            worldPosition = Camera.main.ScreenToWorldPoint(screenPosition);
-            Vector3 playerAimDirection = worldPosition - playerPose;
 
-            var bullet = Instantiate(projectilePrefab, transform.position, transform.rotation);
+            Vector3 playerAimDirection = playerPose - screenPosition;
 
-            //bullet = transform.TransformDirection(new Vector3(0, 0, shootForce));
+            Rigidbody instantiatedProjectile = Instantiate(projectile, playerAimDirection, transform.rotation) as Rigidbody;
+
+            instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
+
+
+            
 
         }
 

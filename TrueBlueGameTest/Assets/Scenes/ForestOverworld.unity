@@ -16473,6 +16473,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 6563892281750420046, guid: bb8df44545b693048a9f67257eca3ce0, type: 3}
   worldPosition: {x: 0, y: 0, z: 0}
   screenPosition: {x: 0, y: 0, z: 0}
+  shootForce: 20
+  fireRate: 0.5
+  projectile: {fileID: 6563892281750420047, guid: bb8df44545b693048a9f67257eca3ce0, type: 3}
+  speed: 20
 --- !u!4 &2016554788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6da5875e119cb1740bb3736e1e22ab73, type: 3}
