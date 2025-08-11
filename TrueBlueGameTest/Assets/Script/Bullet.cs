@@ -11,12 +11,22 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       // StartCoroutine(DestroyBullet());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
+    /*
+    void DestroyBullet()
+    {
+        yield return new WaitForSeconds(5);
+
+        Destroy(GameObject);
+
+
+    }
+    */
 }
