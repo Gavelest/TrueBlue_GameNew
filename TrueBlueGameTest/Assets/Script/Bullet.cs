@@ -4,29 +4,37 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    //private float speed = 10f;
-    //private gameObject Bullet;
+    private float speed = 10f;
+    public GameObject bullet;
+    public float damage = 2f;
 
 
     // Start is called before the first frame update
     void Start()
     {
-       // StartCoroutine(DestroyBullet());
+        StartCoroutine(DestroyCoroutine());
     }
 
     // Update is called once per frame
     void Update()
     {
-       
+        
+        
+
     }
-    /*
-    void DestroyBullet()
+
+    void OnTriggerEnter()
     {
-        yield return new WaitForSeconds(5);
-
-        Destroy(GameObject);
-
+        
 
     }
-    */
+    
+   IEnumerator DestroyCoroutine()
+    {
+
+        yield return new WaitForSeconds(3f);
+
+        Destroy(bullet);
+    }
+    
 }
