@@ -25,7 +25,7 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter()
     {
-        
+        GameObject.FindWithTag("Enemy");
 
     }
     
