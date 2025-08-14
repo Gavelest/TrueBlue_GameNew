@@ -25,7 +25,7 @@ public class InventoryManager : MonoBehaviour
 
         else if (Input.GetButtonDown("Inventory") && !menuActivated) //I spent 20 minutes confused one why this wasnt working and I had forgotten to put the '!' i actually want to feed a baby highly corrosive liquids
         {
-            Time.timeScale = 0; //might cause issues with animations if you want to add them I say as im commenting to myself
+           // Time.timeScale = 0; //might cause issues with animations if you want to add them I say as im commenting to myself
             InventoryMenu.SetActive(true);
             menuActivated = true;
         }
