@@ -23,9 +23,14 @@ public class Bullet : MonoBehaviour
 
     }
 
-    void OnTriggerEnter()
+    void OnTriggerEnter(Collider other)
     {
-        GameObject.FindWithTag("Enemy");
+        if (other.tag == "Enemy")
+        {
+            Debug.Log("Triggered by Enemy");
+            
+
+        }
 
     }
     
