@@ -1219,6 +1219,19 @@ CapsuleCollider:
   m_Height: 124.046326
   m_Direction: 1
   m_Center: {x: 0, y: 16.3, z: -5.5362606}
+--- !u!114 &307484386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307484376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2796700d63a81e4689a97acfda4fe0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumDistanceFromPlayer: 5
 --- !u!1 &308103161
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,6 +1734,7 @@ GameObject:
   - component: {fileID: 408983892}
   - component: {fileID: 408983891}
   - component: {fileID: 408983895}
+  - component: {fileID: 408983896}
   m_Layer: 5
   m_Name: InventoryCanvas
   m_TagString: Untagged
@@ -1824,6 +1838,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InventoryMenu: {fileID: 649593977}
+--- !u!114 &408983896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408983890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2796700d63a81e4689a97acfda4fe0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minimumDistanceFromPlayer: 5
 --- !u!1 &439337492
 GameObject:
   m_ObjectHideFlags: 0
@@ -7031,7 +7058,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 2005995241}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2.1761427
   m_Direction: 1
@@ -8800,6 +8827,10 @@ PrefabInstance:
     - target: {fileID: 7178254600592049670, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       propertyPath: m_Height
       value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7178254600592049670, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7178254600592049671, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       propertyPath: m_Name
