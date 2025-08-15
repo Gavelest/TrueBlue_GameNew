@@ -30,4 +30,9 @@ public class InventoryManager : MonoBehaviour
             menuActivated = true;
         }
     }
+
+    public void AddItem(string itemName, int quantity, GameObject itemObject) // I DONT KNOW WHAT THE FUCK IM DOING
+    {
+        Debug.Log("itemName = " + itemName + "quantity = " + quantity + "itemObject = " + itemObject); //THIS MIGH BE A PROBLEM THERE IS NO SPRITE PICKUP ITS JUST THE ITEM OBJECT IDFK HOW THIS IS GOING TO WORK KMS KMS KMS KMS KMS KMS
+    }
 }

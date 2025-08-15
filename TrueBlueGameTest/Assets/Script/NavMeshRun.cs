@@ -8,7 +8,7 @@ public class NavMeshRun : MonoBehaviour {
 	private float nextTurnTime;
 	private Transform startTransform;
 
-	public float multiplyBy;
+	public float minimumDistanceFromPlayer = 5;
 
 
 	// Use this for initialization
@@ -29,6 +29,12 @@ public class NavMeshRun : MonoBehaviour {
 	
 	}
 
+	public void WanderRandomly()
+	{
+
+
+	}
+
 	public void RunFrom()
 	{
 
@@ -37,10 +43,13 @@ public class NavMeshRun : MonoBehaviour {
 		
 		//temporarily point the object to look away from the player
 		transform.rotation = Quaternion.LookRotation(transform.position - player.position);
+		Vector3 desiredMoveDirection = (transform.position - player.position).normalized;
+
+		float currentDesiredDistance = Mathf.Max(minimumDistanceFromPlayer, Vector3.Distance(transform.position, player.position));
 
 		//Then we'll get the position on that rotation that's multiplyBy down the path (you could set a Random.range
 		// for this if you want variable results) and store it in a new Vector3 called runTo
-		Vector3 runTo = transform.position + transform.forward * multiplyBy;
+		Vector3 runTo = player.position + desiredMoveDirection * currentDesiredDistance;
 		//Debug.Log("runTo = " + runTo);
 		
 		//So now we've got a Vector3 to run to and we can transfer that to a location on the NavMesh with samplePosition.
