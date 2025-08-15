@@ -1429,15 +1429,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358186706}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 301.75, y: 0, z: 8.63}
+  m_LocalRotation: {x: 0.60876125, y: -0, z: -0, w: 0.7933535}
+  m_LocalPosition: {x: 301.75, y: 36.3241, z: 1.320524}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 811468954}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
 --- !u!114 &358186710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8552,7 +8552,7 @@ PrefabInstance:
     - target: {fileID: 7178254600592049668, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       propertyPath: Camera
       value: 
-      objectReference: {fileID: 358186708}
+      objectReference: {fileID: 2005995242}
     - target: {fileID: 7178254600592049668, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       propertyPath: audioPlayer
       value: 
@@ -8651,6 +8651,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7178254600582207922, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
+    - {fileID: 7178254600595925766, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7178254600592049669, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       insertIndex: -1
