@@ -30,7 +30,7 @@ public class Combat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
        
          if (Input.GetKeyDown(KeyCode.Mouse1))
          {
@@ -43,26 +43,29 @@ public class Combat : MonoBehaviour
     void GunShot()
     {
 
-         if (bulletCount < bulletMin)
+        if (bulletCount < bulletMin)
         {
 
-                print("no bullets");
+            print("no bullets");
 
         }
         else
         {
             screenPosition = Input.mousePosition;
+            var worldSpaceMousePos = Camera.main.ScreenToWorldPoint(screenPosition);
 
-            Vector3 playerAimDirection = playerPose - screenPosition;
+            Vector3 playerAimDirection = transform.position - worldSpaceMousePos;
+            playerAimDirection = new Vector3(playerAimDirection.x, 0, playerAimDirection.z).normalized;
 
             Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
 
-            instantiatedProjectile.velocity = transform.TransformDirection(new Vector3(0, 0, speed));
+            instantiatedProjectile.velocity = playerAimDirection * speed;
 
+            bulletCount--;
 
-            
 
         }
+        
 
     }
 
