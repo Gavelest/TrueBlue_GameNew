@@ -15,4 +15,10 @@ public class EnemyManager : MonoBehaviour
     {
         
     }
+
+    void OnTriggerEnter()
+    {
+
+
+    }
 }
