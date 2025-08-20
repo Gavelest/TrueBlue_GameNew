@@ -7400,31 +7400,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7178254600592049671, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
   m_PrefabInstance: {fileID: 2770479270257556942}
   m_PrefabAsset: {fileID: 0}
---- !u!20 &2005995242 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 7178254600595925760, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
-  m_PrefabInstance: {fileID: 2770479270257556942}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2005995243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2005995241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52419c9e3e303984894248ed9ce05a08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 2005995242}
-  projectilePrefab: {fileID: 6563892281750420046, guid: bb8df44545b693048a9f67257eca3ce0, type: 3}
-  worldPosition: {x: 0, y: 0, z: 0}
-  screenPosition: {x: 0, y: 0, z: 0}
-  shootForce: 20
-  fireRate: 0.5
-  projectile: {fileID: 0}
-  speed: 20
 --- !u!136 &2005995250
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -9112,6 +9087,22 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 144041697748253999, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 358186708}
+    - target: {fileID: 2676485330076931105, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 358186708}
+    - target: {fileID: 2676485330076931105, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
+      propertyPath: MovementSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2676485330076931105, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
+      propertyPath: RotationSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7178254600582207923, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.006
@@ -9119,30 +9110,6 @@ PrefabInstance:
     - target: {fileID: 7178254600582207948, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       propertyPath: m_Layer
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178254600592049668, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
-      propertyPath: speed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178254600592049668, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
-      propertyPath: Camera
-      value: 
-      objectReference: {fileID: 2005995242}
-    - target: {fileID: 7178254600592049668, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
-      propertyPath: audioPlayer
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178254600592049668, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
-      propertyPath: MovementSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178254600592049668, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
-      propertyPath: RotationSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 7178254600592049668, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
-      propertyPath: RotateTowardMouse
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7178254600592049669, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       propertyPath: m_RootOrder
@@ -9230,7 +9197,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7178254600582207922, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
-    - {fileID: 7178254600595925766, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7178254600592049669, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       insertIndex: -1

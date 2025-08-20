@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 6563892281750420035}
   - component: {fileID: 6563892281750420034}
   - component: {fileID: 6563892281750420033}
-  - component: {fileID: -3345311954475598810}
   - component: {fileID: 6563892281750420032}
   - component: {fileID: 6563892281750420047}
+  - component: {fileID: -3437953625982249475}
+  - component: {fileID: -4787768892768899860}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -86,20 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-3345311954475598810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6563892281750420046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7af9157313696934492708c0f2d32887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 6563892281750420046}
-  damage: 2
 --- !u!135 &6563892281750420032
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -129,3 +116,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3437953625982249475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563892281750420046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed763f0e2211f794baf25b93c9e8c26a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RotateTowardMouse: 1
+  MovementSpeed: 10
+  RotationSpeed: 10
+  Camera: {fileID: 0}
+--- !u!114 &-4787768892768899860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6563892281750420046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f470c7593715c2b47971501aed8b2311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
