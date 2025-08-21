@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System;
 
 public class ItemSlot : MonoBehaviour, IPointerClickHandler
 {
@@ -99,6 +100,24 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     public void OnLeftClick()
     {
+
+        if (thisItemSelected) //if you click the item again when its selected it will use the item
+        {
+            bool usable = inventoryManager.UseItem(itemName);
+            if (usable)
+            {
+                this.quantity -= 1; //negates quantity total
+                quantityText.text = this.quantity.ToString(); //updates text quantity
+
+                if (this.quantity <= 0)
+                    EmptySlot();
+            }
+            
+        }
+            
+        else
+        { 
+
         inventoryManager.DeselectAllSlots(); //deselects slots before selecting a new one
         selectedShader.SetActive(true);
         thisItemSelected = true;
@@ -108,6 +127,16 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
         if (itemDescriptionImage.sprite == null)
             itemDescriptionImage.sprite = emptySprite;
+        }
+    }
+
+    private void EmptySlot()
+    {
+        quantityText.enabled = false;
+        itemImage.sprite = emptySprite;
+        ItemDescriptionNameText.text = "";
+        ItemDescriptionText.text = "";
+        itemDescriptionImage.sprite = emptySprite;
     }
 
     public void OnRightClick()

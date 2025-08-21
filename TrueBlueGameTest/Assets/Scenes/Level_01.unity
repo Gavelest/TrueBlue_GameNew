@@ -2323,6 +2323,7 @@ GameObject:
   - component: {fileID: 408983891}
   - component: {fileID: 408983895}
   - component: {fileID: 408983896}
+  - component: {fileID: 408983897}
   m_Layer: 5
   m_Name: InventoryCanvas
   m_TagString: Untagged
@@ -2457,6 +2458,8 @@ MonoBehaviour:
   - {fileID: 1511638637}
   - {fileID: 1706028690}
   - {fileID: 807406040}
+  itemSOs:
+  - {fileID: 11400000, guid: 0adf830921b082a4b890810d9a5e4f7e, type: 2}
 --- !u!114 &408983896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2470,6 +2473,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minimumDistanceFromPlayer: 5
+--- !u!114 &408983897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408983890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a0571b7efaa2d140b7375c96d1762b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectIndex: 1
 --- !u!1 &439337492
 GameObject:
   m_ObjectHideFlags: 0
@@ -11148,6 +11164,19 @@ CapsuleCollider:
   m_Height: 2.1761427
   m_Direction: 1
   m_Center: {x: 0, y: -0.03834927, z: 0}
+--- !u!114 &2005995254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005995241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a0571b7efaa2d140b7375c96d1762b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectIndex: 0
 --- !u!4 &2018284692 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 777168502863022221, guid: 07e2cd0408c30084fa2af47f20be4a27, type: 3}
