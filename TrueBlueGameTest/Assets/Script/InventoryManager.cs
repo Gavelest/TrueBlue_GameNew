@@ -7,6 +7,7 @@ public class InventoryManager : MonoBehaviour
     //This manages the inventory system in the game! Right now the button for it is set to 'e' in the unity project settings
     public GameObject InventoryMenu;
     private bool menuActivated; //checks if on or off
+    public ItemSlot[] itemSlot;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +32,30 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void AddItem(string itemName, int quantity, GameObject itemObject) // I DONT KNOW WHAT THE FUCK IM DOING
+    public int AddItem(string itemName, int quantity, GameObject itemObject, string itemDescription, Sprite itemSprite) // I DONT KNOW WHAT THE FUCK IM DOING
     {
-        Debug.Log("itemName = " + itemName + "quantity = " + quantity + "itemObject = " + itemObject); //THIS MIGH BE A PROBLEM THERE IS NO SPRITE PICKUP ITS JUST THE ITEM OBJECT IDFK HOW THIS IS GOING TO WORK KMS KMS KMS KMS KMS KMS
+        //Debug.Log("itemName = " + itemName + "quantity = " + quantity + "itemObject = " + itemObject); //THIS MIGH BE A PROBLEM THERE IS NO SPRITE PICKUP ITS JUST THE ITEM OBJECT IDFK HOW THIS IS GOING TO WORK KMS KMS KMS KMS KMS KMS
+        for (int i = 0; i < itemSlot.Length; i++)
+        {
+            if (itemSlot[i].isFull == false && itemSlot[i].name == name || itemSlot[i].quantity == 0)
+            {
+                int leftOverItems = itemSlot[i].AddItem(itemName, quantity, itemObject, itemDescription, itemSprite); //added item sprite for 2d inventory pop in
+                if (leftOverItems > 0)
+                    leftOverItems = AddItem(itemName, leftOverItems, itemObject, itemDescription, itemSprite);
+
+
+                return leftOverItems;
+            }
+        }
+        return quantity;
+    }
+
+    public void DeselectAllSlots()
+    {
+        for (int i = 0; i < itemSlot.Length; i++)
+        {
+            itemSlot[i].selectedShader.SetActive(false);
+            itemSlot[i].thisItemSelected = false;
+        }
     }
 }
