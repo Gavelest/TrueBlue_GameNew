@@ -11,24 +11,19 @@ public class InventoryManager : MonoBehaviour
 
     public ItemSO[] itemSOs;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Inventory") && menuActivated) //activates and deactivates menu when hitting the inventory button
         {
+            Time.timeScale = 1; //starts time
             InventoryMenu.SetActive(false);
             menuActivated = false;
         }
 
         else if (Input.GetButtonDown("Inventory") && !menuActivated) //I spent 20 minutes confused one why this wasnt working and I had forgotten to put the '!' i actually want to feed a baby highly corrosive liquids
         {
-           // Time.timeScale = 0; //might cause issues with animations if you want to add them I say as im commenting to myself
+            Time.timeScale = 0; // stops time - might cause issues with animations if you want to add them I say as im commenting to myself
             InventoryMenu.SetActive(true);
             menuActivated = true;
         }
