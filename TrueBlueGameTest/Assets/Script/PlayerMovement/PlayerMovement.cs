@@ -44,8 +44,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void RotateFromMouseVector()
     {
+        if (Time.timeScale == 0)
+            return;
         //capture the mouse position in screenspace
-        //then scale the z offset to align it with the player's position - note that Camera.main is different from 'Camera'
+            //then scale the z offset to align it with the player's position - note that Camera.main is different from 'Camera'
         var screenspaceMousePosition = Input.mousePosition;
         screenspaceMousePosition.z = Vector3.Distance(Camera.main.transform.position, transform.position);
 

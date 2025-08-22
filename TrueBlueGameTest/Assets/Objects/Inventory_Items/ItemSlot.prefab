@@ -380,12 +380,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 
-  quantity: 99
+  quantity: 0
   itemObject: {fileID: 0}
   itemSprite: {fileID: 0}
   isFull: 0
   itemDescription: 
   emptySprite: {fileID: 21300000, guid: 892ded148391e66499a9b4bc8f07aab3, type: 3}
+  maxNumberOfItems: 99
   quantityText: {fileID: 3802735671107667746}
   itemImage: {fileID: 471540861901581022}
   itemDescriptionImage: {fileID: 0}

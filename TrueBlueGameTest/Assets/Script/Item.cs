@@ -35,7 +35,9 @@ public class Item : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            
             int leftOverItems = inventoryManager.AddItem(itemName, quantity, ItemObject, itemDescription, itemSprite); // Originally ItemObject in the tutorial was a sprite, same for above. Will likely change to sprite when I figure out how the fuck that shit works lmao
+            Debug.Log(leftOverItems);
             if (leftOverItems <= 0)
                 Destroy(gameObject); // Destroys item object when no more left
             else
