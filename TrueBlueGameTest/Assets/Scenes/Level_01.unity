@@ -1868,11 +1868,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c7d4e07ac3153e458909d71b46b3393, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &346964386 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6658594467094011140, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
-  m_PrefabInstance: {fileID: 2770479270257556942}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &353436163
 GameObject:
   m_ObjectHideFlags: 0
@@ -12998,7 +12993,7 @@ PrefabInstance:
     - target: {fileID: 144041697748253999, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 346964386}
+      objectReference: {fileID: 2005995241}
     - target: {fileID: 144041697748253999, guid: 089773ac6ba4b4047a3040e277a4c622, type: 3}
       propertyPath: mainCamera
       value: 

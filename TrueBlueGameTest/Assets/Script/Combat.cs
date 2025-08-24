@@ -53,21 +53,22 @@ public class Combat : MonoBehaviour
         }
         else
         {
+            
+            //screenPosition = Input.mousePosition;
+            //var worldSpaceMousePos = Camera.main.ScreenToWorldPoint(screenPosition);
+
+            //Vector3 playerAimDirection = transform.position - worldSpaceMousePos;
+           // playerAimDirection = new Vector3(playerAimDirection.x, 0, playerAimDirection.z).normalized;
+
+            Rigidbody instantiatedProjectile = Instantiate(projectile, player.transform.position, Quaternion.identity) as Rigidbody;
+
+            instantiatedProjectile.velocity = player.transform.forward * speed;
+            
             /*
-            screenPosition = Input.mousePosition;
-            var worldSpaceMousePos = Camera.main.ScreenToWorldPoint(screenPosition);
-
-            Vector3 playerAimDirection = transform.position - worldSpaceMousePos;
-            playerAimDirection = new Vector3(playerAimDirection.x, 0, playerAimDirection.z).normalized;
-
-            Rigidbody instantiatedProjectile = Instantiate(projectile, transform.position, transform.rotation) as Rigidbody;
-
-            instantiatedProjectile.velocity = playerAimDirection * speed;
-            */
-
             GameObject spawnedBulletProjectile = Instantiate (projectilePrefab, player.transform.position, Quaternion.identity);
             Rigidbody bulletRigidbody = projectilePrefab.GetComponent<Rigidbody>();
             bulletRigidbody.velocity = player.transform.forward * speed;
+            */
 
             bulletCount--;
 

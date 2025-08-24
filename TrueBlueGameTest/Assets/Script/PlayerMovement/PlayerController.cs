@@ -25,4 +25,14 @@ public class PlayerController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Triggered by Enemy");
+            ChangeHealth(-20);
+        }
+
+    }
 }
