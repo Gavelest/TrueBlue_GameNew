@@ -47,13 +47,15 @@ public class InventoryManager : MonoBehaviour
         //Debug.Log("itemName = " + itemName + "quantity = " + quantity + "itemObject = " + itemObject); //THIS MIGH BE A PROBLEM THERE IS NO SPRITE PICKUP ITS JUST THE ITEM OBJECT IDFK HOW THIS IS GOING TO WORK KMS KMS KMS KMS KMS KMS
         for (int i = 0; i < itemSlot.Length; i++)
         {
-            if (!itemSlot[i].isFull && itemSlot[i].name == name || itemSlot[i].quantity == 0) //fix the itemslot to not search for the itemslot name cause it will check that and not the actual item oops itemSlot[i].name == name 
+            //checks if theres leftover items
+            //fix the itemslot to not search for the itemslot name cause it will check that and not the actual item oops itemSlot[i].name == name 
+            if (!itemSlot[i].isFull && itemSlot[i].name == name || itemSlot[i].quantity == 0) //ohhhh this was to check stackables, if the item picked up is the same as the one in the slot it should stack ontop
             {
                 int leftOverItems = itemSlot[i].AddItem(itemName, quantity, itemObject, itemDescription, itemSprite); //added item sprite for 2d inventory pop in
                 if (leftOverItems > 0)
+                { 
                     leftOverItems = AddItem(itemName, leftOverItems, itemObject, itemDescription, itemSprite);
-
-
+                }
                 return leftOverItems;
             }
         }
