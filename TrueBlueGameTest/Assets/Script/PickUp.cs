@@ -9,6 +9,8 @@ public class PickUp : MonoBehaviour
     //the problem comes with meshing it with our existing inventory
     //though that is mostly on me i should of found a tutorial that suited the game better oopsies
 
+    //IM GOING TO ATTEMPT TO SPLICE THIS TUTORIAL https://www.youtube.com/watch?v=PdSLNpeTRTA WITH WHAT I CURRENTLY HAVE MAYBE, PRAY FOR ME
+
     // Start is called before the first frame update
     void Start()
     {
