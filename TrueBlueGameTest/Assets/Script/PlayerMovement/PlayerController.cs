@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
 
+    [SerializeField] private TMP_Text healthText; 
     public int maxHealth = 100;
     int currentHealth;
     // Start is called before the first frame update
@@ -23,10 +25,10 @@ public class PlayerController : MonoBehaviour
     {
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-
+        healthText.text = $"{currentHealth} / {maxHealth}";
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
         if(other.gameObject.tag == "Enemy")
         {

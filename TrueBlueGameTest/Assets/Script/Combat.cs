@@ -38,6 +38,12 @@ public class Combat : MonoBehaviour
          {
             GunShot();
          }
+
+         if(Input.GetKeyDown(KeyCode.R))
+         {
+            Relod();
+
+         }
         
 
     }
@@ -75,6 +81,17 @@ public class Combat : MonoBehaviour
 
         }
         
+
+    }
+
+    void Relod()
+    {
+
+        if (bulletCount < bulletMin)
+        {
+            bulletCount += 6;
+
+        }
 
     }
 

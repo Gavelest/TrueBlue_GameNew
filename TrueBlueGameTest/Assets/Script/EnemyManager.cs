@@ -7,6 +7,7 @@ public class EnemyManager : MonoBehaviour
 
     private int maxHealth = 100;
     int curHealth;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -17,18 +18,29 @@ public class EnemyManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(curHealth <= 0)
+        {
+            Destroy(gameObject);
+            
 
+        }
+        else
+        {
+
+
+
+        }
     }
 
    
-    void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision other)
     {
 
-        if (other.tag == "Bullet")
+        if (other.gameObject.tag == "Bullet")
         {
 
             Debug.Log("Take Damage");
-            //ChangeHealth();
+            ChangeHealth(-50);
 
         }
 
@@ -38,9 +50,11 @@ public class EnemyManager : MonoBehaviour
     {
 
         curHealth = Mathf.Clamp(curHealth + amount, 0, maxHealth);
-        Debug.Log(curHealth + "/" + maxHealth);
+        
 
     }
+
+   
 
     
 }
