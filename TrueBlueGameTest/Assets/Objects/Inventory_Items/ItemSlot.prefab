@@ -376,7 +376,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8569688896266992148}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c7d4e07ac3153e458909d71b46b3393, type: 3}
+  m_Script: {fileID: 11500000, guid: a0974964d22f5034c94f87c8fca33970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: 
@@ -385,12 +385,12 @@ MonoBehaviour:
   itemSprite: {fileID: 0}
   isFull: 0
   itemDescription: 
-  emptySprite: {fileID: 21300000, guid: 892ded148391e66499a9b4bc8f07aab3, type: 3}
-  maxNumberOfItems: 99
-  quantityText: {fileID: 3802735671107667746}
-  itemImage: {fileID: 471540861901581022}
+  emptySprite: {fileID: 0}
+  maxNumberOfItems: 0
+  quantityText: {fileID: 0}
+  itemImage: {fileID: 0}
   itemDescriptionImage: {fileID: 0}
   ItemDescriptionNameText: {fileID: 0}
   ItemDescriptionText: {fileID: 0}
-  selectedShader: {fileID: 5090182157007995696}
+  selectedShader: {fileID: 0}
   thisItemSelected: 0

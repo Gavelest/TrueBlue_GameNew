@@ -5,16 +5,18 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
+using TrueBlueGameTest.Assets.Script.Items;
+using Unity.VisualScripting;
 
 public class ItemSlot : MonoBehaviour, IPointerClickHandler
 {
     //Item Data - stores data - set public for debug purposes ========================
+    public ItemData heldItem;
     public string itemName;
     public int quantity;
     public GameObject itemObject;
-    public Sprite itemSprite; //m
     public bool isFull; //tracks if slot full
-    public string itemDescription;
+
     public Sprite emptySprite; //makes it so the empty slots have an invisible item image instead of glaring bright white default, im pretty sure the easier way of doing this is to set the description image to a bool but im following a tutorial ew
 
     [SerializeField]
@@ -44,23 +46,13 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
-    public int AddItem(string itemName, int quantity, GameObject itemObject, string itemDescription, Sprite itemSprite) //m
+    public int AddItem(ItemData item, int quantity) //m
     {
         //Check to see if slot is full
         if (isFull)
             return quantity;
-        
-        //update name
-        this.itemName = itemName;
 
-        //update item object
-        this.itemObject = itemObject;
-
-        //update description
-        this.itemDescription = itemDescription;
-
-        //update item image sprite
-        this.itemSprite = itemSprite; //m
+        heldItem = item;
         itemImage.enabled = true;
 
         //update quantity
@@ -122,8 +114,13 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         selectedShader.SetActive(true);
         thisItemSelected = true;
         ItemDescriptionNameText.text = itemName;
-        ItemDescriptionText.text = itemDescription;
-        itemDescriptionImage.sprite = itemSprite; //shit
+
+            if (heldItem)
+            { 
+                ItemDescriptionText.text = heldItem.description;
+                itemDescriptionImage.sprite = heldItem.icon; //shit
+            }
+        
 
         if (itemDescriptionImage.sprite == null)
             itemDescriptionImage.sprite = emptySprite;

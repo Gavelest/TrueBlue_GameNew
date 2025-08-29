@@ -1,26 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using TrueBlueGameTest.Assets.Script.Items;
 using UnityEngine;
 
 public class Item : MonoBehaviour
 {
     [SerializeField]
-    private string itemName; // Field for name (obviously lol)
+    private ItemData heldItem;
+
 
     [SerializeField]
     private int quantity; // Field for item amount
 
-    [SerializeField]
-    private GameObject ItemObject;
     // ^^ Field for Item / this might be a problem that'll get messed with as again this was made for 2d and it'll feed to the addItem as the sprite. I'm sure it'll be a simple change?
     // Likely link sprites with objects in a sort of management script perhaps? Unsure lol idk how to code that well but I'd like 3d interactables and 2d sprites in the inventory like be so fr rn bro
-
-    [SerializeField] //Me attempting to make my own code so im commenting the pseudopart here, I just need this so the image can be appart of the object or something
-    private Sprite itemSprite; //m
-
-    [TextArea]
-    [SerializeField]
-    private string itemDescription;
 
     private InventoryManager inventoryManager;
 
@@ -36,7 +29,7 @@ public class Item : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             
-            int leftOverItems = inventoryManager.AddItem(itemName, quantity, ItemObject, itemDescription, itemSprite); // Originally ItemObject in the tutorial was a sprite, same for above. Will likely change to sprite when I figure out how the fuck that shit works lmao
+            int leftOverItems = inventoryManager.AddItem(heldItem, quantity); // Originally ItemObject in the tutorial was a sprite, same for above. Will likely change to sprite when I figure out how the fuck that shit works lmao
             Debug.Log(leftOverItems);
             if (leftOverItems <= 0)
                 Destroy(gameObject); // Destroys item object when no more left
