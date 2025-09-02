@@ -41,7 +41,7 @@ public class Combat : MonoBehaviour
 
          if(Input.GetKeyDown(KeyCode.R))
          {
-            yield return new WaitForSeconds(2);
+            //yield return new WaitForSeconds(2);
             Relod();
 
          }
