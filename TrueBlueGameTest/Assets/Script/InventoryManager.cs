@@ -10,7 +10,7 @@ public class InventoryManager : MonoBehaviour
     private bool menuActivated; //checks if on or off
     public ItemSlot[] itemSlot;
 
-    public ItemSO[] itemSOs;
+    public ItemSO[] itemDataSet;
 
     // Update is called once per frame
     void Update()
@@ -32,11 +32,11 @@ public class InventoryManager : MonoBehaviour
 
     public bool UseItem(string itemName)
     {
-        for (int i = 0; i < itemSOs.Length; i++) //checks array list for matching scriptable object
+        for (int i = 0; i < itemDataSet.Length; i++) //checks array list for matching scriptable object
         {
-            if(itemSOs[i].itemName == itemName)
+            if(itemDataSet[i].itemName == itemName)
             {
-               bool usable = itemSOs[i].UseItem();
+               bool usable = itemDataSet[i].UseItem();
                 return usable;
             }
         }

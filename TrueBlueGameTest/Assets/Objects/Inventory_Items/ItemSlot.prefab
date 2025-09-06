@@ -379,18 +379,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0974964d22f5034c94f87c8fca33970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heldItem: {fileID: 0}
   itemName: 
   quantity: 0
-  itemObject: {fileID: 0}
-  itemSprite: {fileID: 0}
+  itemObject: {fileID: 2428601573765607475, guid: dfad02876503a334ebd213a37c09c764, type: 3}
   isFull: 0
-  itemDescription: 
-  emptySprite: {fileID: 0}
-  maxNumberOfItems: 0
+  maxNumberOfItems: 5
   quantityText: {fileID: 0}
   itemImage: {fileID: 0}
   itemDescriptionImage: {fileID: 0}
   ItemDescriptionNameText: {fileID: 0}
   ItemDescriptionText: {fileID: 0}
-  selectedShader: {fileID: 0}
+  selectedShader: {fileID: 5090182157007995696}
   thisItemSelected: 0

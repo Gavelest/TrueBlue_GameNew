@@ -17,7 +17,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     public GameObject itemObject;
     public bool isFull; //tracks if slot full
 
-    public Sprite emptySprite; //makes it so the empty slots have an invisible item image instead of glaring bright white default, im pretty sure the easier way of doing this is to set the description image to a bool but im following a tutorial ew
+    //public Sprite emptySprite; //makes it so the empty slots have an invisible item image instead of glaring bright white default, im pretty sure the easier way of doing this is to set the description image to a bool but im following a tutorial ew
 
     [SerializeField]
     private int maxNumberOfItems; //defines the size of the slot
@@ -122,18 +122,18 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
             }
         
 
-        if (itemDescriptionImage.sprite == null)
-            itemDescriptionImage.sprite = emptySprite;
+        //if (itemDescriptionImage.sprite == null)
+        //    itemDescriptionImage.sprite = emptySprite;
         }
     }
 
     private void EmptySlot()
     {
         quantityText.enabled = false;
-        itemImage.sprite = emptySprite;
+     //   itemImage.sprite = emptySprite;
         ItemDescriptionNameText.text = "";
         ItemDescriptionText.text = "";
-        itemDescriptionImage.sprite = emptySprite;
+    //    itemDescriptionImage.sprite = emptySprite;
     }
 
     public void OnRightClick()

@@ -52,3 +52,5 @@ public class ItemSO : ScriptableObject
     //the commented out code is unnecessary for what we currently have but I thought I would include it in anyway, because honestly we could apply it somewhere if we wanted to!
     //could be cool for making certain things make you fucked up for a bit yknow?
 }
+
+//I WANT THIS GONE BUT HOW IM GONNA KMS
