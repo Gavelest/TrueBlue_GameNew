@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c2e9948eb43c544872eac6c7d58984, type: 3}
   m_Name: Large Healthkit
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Large Health Kit
+  description: 
   icon: {fileID: 0}
+  quanity: 0
   healAmount: 100

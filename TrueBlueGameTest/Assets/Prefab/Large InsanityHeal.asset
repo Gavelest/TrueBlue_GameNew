@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d9ce95d4b6a0ca4c93e821f98eaaeb6, type: 3}
   m_Name: Large InsanityHeal
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
+  itemName: TB Bottle
+  description: An untouched pristine bottle of TB, Truly Bitter. This could truly
+    quench your thirst.
   icon: {fileID: 0}
-  InsanityhealAmount: 100
+  quanity: 0
+  InsanityhealAmount: 50

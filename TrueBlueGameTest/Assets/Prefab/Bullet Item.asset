@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Bullet Item
   m_EditorClassIdentifier: 
   itemName: Bullet
-  description: 
-  icon: {fileID: 21300000, guid: a044d296f0c964ed8856be08c527238d, type: 3}
+  description: A simple bullet.
+  icon: {fileID: 21300000, guid: 7755facc62e476e44b5376f1f572565c, type: 3}
+  quanity: 0
