@@ -12,9 +12,18 @@ namespace TrueBlueGameTest.Assets.Script.Items
     {
         public string itemName; // Field for name (obviously lol)
         public string description; // Field for name (obviously lol)
-        public Sprite icon;
+        public Sprite icon; // Field for icon EXCEPT IT DOESNT FUCKING WORK
+        public int quanity;
 
     }
+
+    //public bool SanityHeal()
+    //{
+    //    if (InventoryManager.UseItem)
+    //        sanitySlider.value + InsanityhealAmount;
+    //}
+    //return false;
+
 }
 
 //Items needed

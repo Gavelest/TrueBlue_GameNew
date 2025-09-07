@@ -11,6 +11,8 @@ namespace TrueBlueGameTest.Assets.Script.Items
     {
         [SerializeField] private int InsanityhealAmount = 100;
     }
+
+    
 }
 
 //this wont actually do anything until a insanity manager is created
