@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TrueBlueGameTest.Assets.Script.Items;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class Item : MonoBehaviour, IInteractable
 {
     [SerializeField]
     private ItemData heldItem;
@@ -23,20 +23,30 @@ public class Item : MonoBehaviour
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>(); // Finds the Inventory Manager
     }
 
-    // Update is called once per frame
-    private void OnCollisionEnter(Collision collision) // Following the tutorial, this will likely need to severely edited cause unfortunately this was made for 2d but i'll splice it somehow lmao idk fuck it we ball
+    public void Interact()
     {
-        if(collision.gameObject.tag == "Player")
+        if (Input.GetButtonDown("Interact"))
         {
-            int leftOverItems = inventoryManager.AddItem(heldItem, quantity); // Originally ItemObject in the tutorial was a sprite, same for above. Will likely change to sprite when I figure out how the fuck that shit works lmao
-            Debug.Log(leftOverItems);
-            if (leftOverItems <= 0)
-                Destroy(gameObject); // Destroys item object when no more left
-            else
-                quantity = leftOverItems;
-
-            //this makes me upset, it doesnt even kill the item anymore bruhtha
+            Debug.Log("I've been picked up!");
         }
     }
 
+    //private void OnCollisionEnter(Collision collision) // Following the tutorial, this will likely need to severely edited cause unfortunately this was made for 2d but i'll splice it somehow lmao idk fuck it we ball
+    //{
+    //    if(collision.gameObject.tag == "Player")
+    //    {
+    //        int leftOverItems = inventoryManager.AddItem(heldItem, quantity); // Originally ItemObject in the tutorial was a sprite, same for above. Will likely change to sprite when I figure out how the fuck that shit works lmao
+    //        Debug.Log(leftOverItems);
+    //        if (leftOverItems <= 0)
+    //            Destroy(gameObject); // Destroys item object when no more left
+    //        else
+    //            quantity = leftOverItems;
+    //
+    //        //this makes me upset, it doesnt even kill the item anymore bruhtha
+    //    }
+    //}
+
 }
+
+
+

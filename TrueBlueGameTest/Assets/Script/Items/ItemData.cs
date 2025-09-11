@@ -17,6 +17,7 @@ namespace TrueBlueGameTest.Assets.Script.Items
 
     }
 
+
     //public bool SanityHeal()
     //{
     //    if (InventoryManager.UseItem)
