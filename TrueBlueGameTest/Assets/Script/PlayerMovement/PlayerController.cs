@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,7 +19,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(currentHealth <= 0)
+        {
 
+            Death();
+
+        }
     }
 
     void ChangeHealth(int amount)
@@ -37,4 +43,12 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+    void Death()
+    {
+
+       SceneManager.LoadScene(1); 
+
+    }
+
 }
