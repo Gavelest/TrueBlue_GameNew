@@ -1792,7 +1792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heldItem: {fileID: 11400000, guid: 1163fed3f2b6eec4f9833b3e1d25bed8, type: 2}
-  quantity: 1
+  quantity: 2
 --- !u!1 &353436163
 GameObject:
   m_ObjectHideFlags: 0
@@ -4293,6 +4293,10 @@ PrefabInstance:
       propertyPath: ItemObject
       value: 
       objectReference: {fileID: 2428601573765607475, guid: dfad02876503a334ebd213a37c09c764, type: 3}
+    - target: {fileID: 2428601573765607474, guid: dfad02876503a334ebd213a37c09c764, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2428601573765607475, guid: dfad02876503a334ebd213a37c09c764, type: 3}
       propertyPath: m_Name
       value: Item (1)
@@ -4872,15 +4876,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 0.8591337, b: 0.7877358, a: 0.68235296}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: d40adaa4574b39e4bac335021a5ed5d0, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -8537,14 +8541,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 0.46666667}
+  m_Color: {r: 0.4245283, g: 0.37046102, b: 0.37046102, a: 0.89411765}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d40adaa4574b39e4bac335021a5ed5d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7fc1a04e63d03754f9991d2f8a14baad, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10716,14 +10720,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.18463019, g: 0.18454076, b: 0.2735849, a: 1}
+  m_Color: {r: 0.13656995, g: 0.13656995, b: 0.2924528, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d40adaa4574b39e4bac335021a5ed5d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2f716e3333ad36448a52bde3f9573aab, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16218,6 +16222,18 @@ PrefabInstance:
     - target: {fileID: 8569688896266992148, guid: a139e5ff898db1a479abfec6c27e8a4d, type: 3}
       propertyPath: m_Name
       value: ItemSlot
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569688896266992150, guid: a139e5ff898db1a479abfec6c27e8a4d, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569688896266992150, guid: a139e5ff898db1a479abfec6c27e8a4d, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8569688896266992150, guid: a139e5ff898db1a479abfec6c27e8a4d, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8569688896266992151, guid: a139e5ff898db1a479abfec6c27e8a4d, type: 3}
       propertyPath: m_Pivot.x

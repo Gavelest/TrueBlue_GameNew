@@ -10,7 +10,7 @@ public class InventoryManager : MonoBehaviour
     private bool menuActivated; //checks if on or off
     public ItemSlot[] itemSlot;
 
-    public ItemSO[] itemDataSet;
+    public ItemSO[] itemDataSet; //this is the PROBLEM.... You need to make a new use item bool in "ItemData" However you have nothing to bool with so you might as kill yo-
 
     // Update is called once per frame
     void Update()

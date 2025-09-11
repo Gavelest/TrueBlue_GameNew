@@ -13,10 +13,10 @@ namespace TrueBlueGameTest.Assets.Script.Items
         public string itemName; // Field for name (obviously lol)
         public string description; // Field for name (obviously lol)
         public Sprite icon; // Field for icon EXCEPT IT DOESNT FUCKING WORK
-        public int quanity;
+        public int quantity;
+
 
     }
-
 
     //public bool SanityHeal()
     //{
@@ -34,3 +34,7 @@ namespace TrueBlueGameTest.Assets.Script.Items
 //go off and find all the prev old pass variables and change them to item held item stuff idk go brr bro you got it
 
 //ok so like, a lot of the functionality (sort of) is already on the item slot, im gonna scream idk how to freehand this
+
+
+//This works theoretically, however, with the problem that is needing a 'UseItem' class in here is the major problem child
+//Because Idk wtf should bool in the statement

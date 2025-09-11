@@ -28,23 +28,14 @@ public class Item : MonoBehaviour, IInteractable
         if (Input.GetButtonDown("Interact"))
         {
             Debug.Log("I've been picked up!");
+            int leftOverItems = inventoryManager.AddItem(heldItem, quantity); // Originally ItemObject in the tutorial was a sprite, same for above. Will likely change to sprite when I figure out how the fuck that shit works lmao
+            Debug.Log(leftOverItems);
+            if (leftOverItems <= 0)
+                Destroy(gameObject); // Destroys item object when no more left
+            else
+                quantity = leftOverItems;
         }
     }
-
-    //private void OnCollisionEnter(Collision collision) // Following the tutorial, this will likely need to severely edited cause unfortunately this was made for 2d but i'll splice it somehow lmao idk fuck it we ball
-    //{
-    //    if(collision.gameObject.tag == "Player")
-    //    {
-    //        int leftOverItems = inventoryManager.AddItem(heldItem, quantity); // Originally ItemObject in the tutorial was a sprite, same for above. Will likely change to sprite when I figure out how the fuck that shit works lmao
-    //        Debug.Log(leftOverItems);
-    //        if (leftOverItems <= 0)
-    //            Destroy(gameObject); // Destroys item object when no more left
-    //        else
-    //            quantity = leftOverItems;
-    //
-    //        //this makes me upset, it doesnt even kill the item anymore bruhtha
-    //    }
-    //}
 
 }
 

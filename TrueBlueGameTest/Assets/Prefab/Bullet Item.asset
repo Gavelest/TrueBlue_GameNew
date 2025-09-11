@@ -15,4 +15,4 @@ MonoBehaviour:
   itemName: Bullet
   description: A simple bullet.
   icon: {fileID: 21300000, guid: 7755facc62e476e44b5376f1f572565c, type: 3}
-  quanity: 0
+  quantity: 0
