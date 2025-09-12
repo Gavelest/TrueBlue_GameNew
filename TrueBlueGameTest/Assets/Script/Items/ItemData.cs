@@ -11,9 +11,9 @@ namespace TrueBlueGameTest.Assets.Script.Items
     public abstract class ItemData : ScriptableObject
     {
         public string itemName; // Field for name (obviously lol)
-        public string description; // Field for name (obviously lol)
+        public string description; // Field for desc (obviously lol)
         public Sprite icon; // Field for icon EXCEPT IT DOESNT FUCKING WORK
-        public int quantity;
+
 
 
     }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TrueBlueGameTest.Assets.Script.Items;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -9,8 +10,20 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryMenu;
     private bool menuActivated; //checks if on or off
     public ItemSlot[] itemSlot;
-
+    public ItemData[] heldItem;
     public ItemSO[] itemDataSet; //this is the PROBLEM.... You need to make a new use item bool in "ItemData" However you have nothing to bool with so you might as kill yo-
+
+    [SerializeField]
+    private Image descriptionImage;
+
+    private void Awake()
+    {
+        foreach (ItemSlot slot in itemSlot)
+        {
+            slot.itemDescriptionImage = descriptionImage;
+        }
+
+    }
 
     // Update is called once per frame
     void Update()
@@ -32,11 +45,11 @@ public class InventoryManager : MonoBehaviour
 
     public bool UseItem(string itemName)
     {
-        for (int i = 0; i < itemDataSet.Length; i++) //checks array list for matching scriptable object
+        for (int i = 0; i < heldItem.Length; i++) //checks array list for matching scriptable object
         {
-            if(itemDataSet[i].itemName == itemName)
+            if(heldItem[i].itemName == itemName)
             {
-               bool usable = itemDataSet[i].UseItem();
+               bool usable = itemDataSet[i].UseItem(); //change this to helditem when use item is added
                 return usable;
             }
         }

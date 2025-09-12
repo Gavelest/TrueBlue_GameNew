@@ -385,8 +385,8 @@ MonoBehaviour:
   itemObject: {fileID: 2428601573765607475, guid: dfad02876503a334ebd213a37c09c764, type: 3}
   isFull: 0
   maxNumberOfItems: 99
-  quantityText: {fileID: 0}
-  itemImage: {fileID: 0}
+  quantityText: {fileID: 3802735671107667746}
+  itemImage: {fileID: 471540861901581022}
   itemDescriptionImage: {fileID: 0}
   ItemDescriptionNameText: {fileID: 0}
   ItemDescriptionText: {fileID: 0}

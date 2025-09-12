@@ -53,14 +53,14 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
             return quantity;
 
         heldItem = item;
-        itemImage.enabled = true;
+        itemImage.gameObject.SetActive(true);
 
         //update quantity
         this.quantity += quantity;
         if (this.quantity >= maxNumberOfItems)
         {
             quantityText.text = maxNumberOfItems.ToString();
-            quantityText.enabled = true;
+            quantityText.gameObject.SetActive(true);
             isFull = true;
         
 
@@ -72,7 +72,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
         //Update Quantity Text
         quantityText.text= this.quantity.ToString();
-        quantityText.enabled = true;
+        quantityText.gameObject.SetActive(true);
         return 0;
 
     }
@@ -104,26 +104,28 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
                 if (this.quantity <= 0)
                     EmptySlot();
             }
-            
-        }
-            
-        else
-        { 
 
-        inventoryManager.DeselectAllSlots(); //deselects slots before selecting a new one
-        selectedShader.SetActive(true);
-        thisItemSelected = true;
-        ItemDescriptionNameText.text = itemName;
+        }
+
+        else
+        {
+
+            inventoryManager.DeselectAllSlots(); //deselects slots before selecting a new one
+            selectedShader.SetActive(true);
+            thisItemSelected = true;
+            ItemDescriptionNameText.text = itemName;
 
             if (heldItem)
-            { 
+            {
                 ItemDescriptionText.text = heldItem.description;
                 itemDescriptionImage.sprite = heldItem.icon; //shit
             }
-        
-
-        //if (itemDescriptionImage.sprite == null)
-        //    itemDescriptionImage.sprite = emptySprite;
+            else
+            {
+                ItemDescriptionText.text = "";
+                itemDescriptionImage.sprite = null;
+            }
+    
         }
     }
 
