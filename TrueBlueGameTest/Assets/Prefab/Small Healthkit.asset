@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c2e9948eb43c544872eac6c7d58984, type: 3}
   m_Name: Small Healthkit
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
+  itemName: H
+  description: H
   icon: {fileID: 0}
+  quantity: 0
   healAmount: 50

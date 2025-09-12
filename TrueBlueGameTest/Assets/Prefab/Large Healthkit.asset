@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Large Healthkit
   m_EditorClassIdentifier: 
   itemName: Large Health Kit
-  description: 
+  description: H
   icon: {fileID: 0}
-  quanity: 0
+  quantity: 0
   healAmount: 100
