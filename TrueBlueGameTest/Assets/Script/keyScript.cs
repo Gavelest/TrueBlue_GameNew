@@ -9,7 +9,7 @@ public class keyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        doorCollider.SetActive(false);
+        doorCollider.SetActive(true);
     }
 
     // Update is called once per frame
@@ -24,7 +24,7 @@ public class keyScript : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            doorCollider.SetActive(true);
+            doorCollider.SetActive(false);
         }
     }
 
