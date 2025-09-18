@@ -12,7 +12,8 @@ namespace TrueBlueGameTest.Assets.Script.Items
     {
         public string itemName; // Field for name (obviously lol)
         public string description; // Field for desc (obviously lol)
-        public Sprite icon; // Field for icon EXCEPT IT DOESNT FUCKING WORK
+        public Sprite icon; // Field for description icon
+        public Sprite slotIcon; // This is what holds the icon for the item in an inventory slot
 
 
 
