@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: fd0c2415c7f80674590e49c637f241d5
   - enabled: 1
-    path: Assets/Scenes/ForestOverworld.unity
-    guid: 2793093fd09796e4cb960515e90be1ed
+    path: Assets/Scenes/Level_01_Current.unity
+    guid: c732c799738f868479dd9771e40c93a5
   m_configObjects: {}
