@@ -11,7 +11,6 @@ public class InventoryManager : MonoBehaviour
     private bool menuActivated; //checks if on or off
     public ItemSlot[] itemSlot;
     public ItemData[] heldItem;
-    public ItemSO[] itemDataSet; //this is the PROBLEM.... You need to make a new use item bool in "ItemData" However you have nothing to bool with so you might as kill yo-
 
     [SerializeField]
     private Image descriptionImage;
@@ -49,7 +48,7 @@ public class InventoryManager : MonoBehaviour
         {
             if(heldItem[i].itemName == itemName)
             {
-               bool usable = itemDataSet[i].UseItem(); //change this to helditem when use item is added
+               bool usable = heldItem[i].UseItem(); //change this to helditem when use item is added
                 return usable;
             }
         }
