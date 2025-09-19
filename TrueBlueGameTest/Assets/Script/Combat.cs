@@ -34,7 +34,7 @@ public class Combat : MonoBehaviour
     {
        
        
-         if (Input.GetKeyDown(KeyCode.Mouse1))
+         if (Input.GetKeyDown(KeyCode.Mouse2))
          {
             GunShot();
          }
