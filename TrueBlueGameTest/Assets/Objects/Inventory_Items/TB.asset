@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d9ce95d4b6a0ca4c93e821f98eaaeb6, type: 3}
-  m_Name: Small InsanityHeal
+  m_Script: {fileID: 11500000, guid: 316995c4fd39a654096b3454f192ba2d, type: 3}
+  m_Name: TB
   m_EditorClassIdentifier: 
-  itemName: TB Can
-  description: A nice crisp can of TB, Truly Bitter. You have a true thirst for it!
-  icon: {fileID: 0}
-  quanity: 0
-  InsanityhealAmount: 10
+  itemName: TB
+  statToChange: 2
+  amountToChangeStat: 0

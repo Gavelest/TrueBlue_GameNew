@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
     void Death()
     {
 
-       SceneManager.LoadScene(0); 
+       SceneManager.LoadScene(1); 
 
     }
 
