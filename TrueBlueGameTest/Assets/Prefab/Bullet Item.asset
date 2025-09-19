@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Bullet Item
   m_EditorClassIdentifier: 
   itemName: Bullet
-  description: A simple bullet.
-  icon: {fileID: 21300000, guid: 7755facc62e476e44b5376f1f572565c, type: 3}
-  quantity: 0
+  description: A simple box of ammo for your handgun. Made around 1897, it's interesting
+    to still find these around.
+  icon: {fileID: 21300000, guid: 2ef7d8cf762a36241a8c84c758dbb93f, type: 3}
+  slotIcon: {fileID: 21300000, guid: ed87e9058f1d29847b0011dacc7c54bb, type: 3}

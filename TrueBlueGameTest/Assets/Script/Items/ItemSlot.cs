@@ -73,6 +73,9 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         //Update Quantity Text
         quantityText.text= this.quantity.ToString();
         quantityText.gameObject.SetActive(true);
+
+        //Update Inventory Item Slot Image
+        itemImage.sprite = heldItem.slotIcon;
         return 0;
 
     }
@@ -132,10 +135,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     private void EmptySlot()
     {
         quantityText.enabled = false;
-     //   itemImage.sprite = emptySprite;
+     // itemImage.sprite = emptySprite;
         ItemDescriptionNameText.text = "";
         ItemDescriptionText.text = "";
-    //    itemDescriptionImage.sprite = emptySprite;
+     // itemDescriptionImage.sprite = emptySprite;
     }
 
     public void OnRightClick()
