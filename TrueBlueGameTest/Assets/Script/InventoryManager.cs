@@ -39,6 +39,7 @@ public class InventoryManager : MonoBehaviour
             Time.timeScale = 0; // stops time - might cause issues with animations if you want to add them I say as im commenting to myself
             InventoryMenu.SetActive(true);
             menuActivated = true;
+            //this messes with the intro message if the inventory is opened too early
         }
     }
 
@@ -48,7 +49,7 @@ public class InventoryManager : MonoBehaviour
         {
             if(heldItem[i].itemName == itemName)
             {
-               bool usable = heldItem[i].UseItem(); //change this to helditem when use item is added
+               bool usable = heldItem[i].UseItem();
                 return usable;
             }
         }

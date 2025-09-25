@@ -15,11 +15,10 @@ namespace TrueBlueGameTest.Assets.Script.Items
         public Sprite icon; // Field for description icon
         public Sprite slotIcon; // This is what holds the icon for the item in an inventory slot
 
-        public virtual bool UseItem()
+        public virtual bool UseItem() //default state is fault, to be overrided on items that get used
         {
-            return false;    
+            return false;
         }
-
     }
 }
 

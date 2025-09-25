@@ -11,7 +11,12 @@ namespace TrueBlueGameTest.Assets.Script.Items
     {
         [SerializeField] private int healAmount = 100;
 
-        public override bool UseItem() //make it so the the player can't heal if they are full
+        private InventoryManager inventoryManager;
+
+        int curHealth;
+
+        //make it so the the player can't heal if they are full
+        public override bool UseItem()
         {
             return base.UseItem();
         }
