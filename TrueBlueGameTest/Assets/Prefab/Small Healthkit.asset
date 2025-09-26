@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65c2e9948eb43c544872eac6c7d58984, type: 3}
   m_Name: Small Healthkit
   m_EditorClassIdentifier: 
-  itemName: f
-  description: f
-  icon: {fileID: 0}
-  slotIcon: {fileID: 0}
-  healAmount: 50
+  itemName: Bandages
+  description: A gauze roll of bandages.
+  icon: {fileID: 21300000, guid: 0e74fa7f684eecc459e1114c88eb09c3, type: 3}
+  slotIcon: {fileID: 21300000, guid: 66436ce01974bef4b8924ed70ac9c995, type: 3}
+  healAmount: 10

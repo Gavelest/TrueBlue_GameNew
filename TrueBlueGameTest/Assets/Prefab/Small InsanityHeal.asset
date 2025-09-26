@@ -15,5 +15,5 @@ MonoBehaviour:
   itemName: TB Can
   description: A nice crisp can of TB, Truly Bitter. You have a true thirst for it!
   icon: {fileID: 21300000, guid: 69a250bc077dd044cb150ebc3b0b31c9, type: 3}
-  slotIcon: {fileID: 21300000, guid: f836388cf9de819489419f73acfe6129, type: 3}
+  slotIcon: {fileID: 21300000, guid: 8cbb1cfc44fb4e947b3180328516bd8b, type: 3}
   InsanityhealAmount: 10

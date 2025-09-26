@@ -12,7 +12,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 {
     //Item Data - stores data - set public for debug purposes ========================
     public ItemData heldItem;
-    public string itemName;
+    //public string itemName;
     public int quantity;
     public GameObject itemObject;
     public bool isFull; //tracks if slot full
@@ -96,9 +96,12 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     public void OnLeftClick()
     {
 
+        if(!heldItem) return;
+
         if (thisItemSelected) //if you click the item again when its selected it will use the item
         {
-            bool usable = inventoryManager.UseItem(itemName);
+            Debug.Log(1);
+            var usable = heldItem.UseItem();
             if (usable)
             {
                 this.quantity -= 1; //negates quantity total
@@ -116,7 +119,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
             inventoryManager.DeselectAllSlots(); //deselects slots before selecting a new one
             selectedShader.SetActive(true);
             thisItemSelected = true;
-            ItemDescriptionNameText.text = itemName;
+            ItemDescriptionNameText.text = heldItem.itemName;
 
             if (heldItem)
             {
@@ -135,10 +138,10 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     private void EmptySlot()
     {
         quantityText.enabled = false;
-     // itemImage.sprite = emptySprite;
+        itemImage.sprite = null; //null makes it white erm oops
         ItemDescriptionNameText.text = "";
         ItemDescriptionText.text = "";
-     // itemDescriptionImage.sprite = emptySprite;
+        itemDescriptionImage.sprite = null;
     }
 
     public void OnRightClick()

@@ -45,6 +45,7 @@ public class InventoryManager : MonoBehaviour
 
     public bool UseItem(string itemName)
     {
+        Debug.Log(2);
         for (int i = 0; i < heldItem.Length; i++) //checks array list for matching scriptable object
         {
             if(heldItem[i].itemName == itemName)

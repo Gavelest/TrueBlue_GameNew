@@ -17,6 +17,7 @@ namespace TrueBlueGameTest.Assets.Script.Items
 
         public virtual bool UseItem() //default state is fault, to be overrided on items that get used
         {
+            Debug.Log(3);
             return false;
         }
     }

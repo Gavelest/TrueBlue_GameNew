@@ -15,7 +15,7 @@ namespace TrueBlueGameTest.Assets.Script.Items
         //make it so the the player can't heal if they are full
         public override bool UseItem()
         {
-            return base.UseItem();
+            return true;
         }
     }
 
