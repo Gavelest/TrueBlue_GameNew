@@ -8,7 +8,7 @@ public class TeleScript : MonoBehaviour
 
     public void UseTele()
     {
-        Player.transform.position = new Vector3(12f, 0f, 13f);
+        Player.transform.position = new Vector3(-159f, 1.31f, 24.9f);
         Debug.Log("TELEPORT");
     }
 }
