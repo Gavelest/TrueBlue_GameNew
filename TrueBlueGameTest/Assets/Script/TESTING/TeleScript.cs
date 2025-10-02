@@ -5,10 +5,11 @@ using UnityEngine;
 public class TeleScript : MonoBehaviour
 {
    public GameObject Player;
-
+   public Vector3 TeleportDestination;
+   
     public void UseTele()
     {
-        Player.transform.position = new Vector3(-159f, 95f, 24.9f);
+        Player.transform.position = TeleportDestination;
         Debug.Log("TELEPORT");
     }
 }
