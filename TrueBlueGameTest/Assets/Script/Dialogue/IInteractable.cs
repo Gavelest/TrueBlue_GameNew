@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-interface IInteractable {
-    public void Interact();
+public interface IInteractable
+{
+    void Interact(Player player);
 }
 
 public class Interactor : MonoBehaviour

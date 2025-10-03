@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
 {
     private InputHandler _input;
 
+    //[SerializeField] private DialogueUI dialogueUI;
+
     [SerializeField]
     private bool RotateTowardMouse;
 
@@ -27,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (dialogueUI.IsOpen) return;
 
         var targetVector = new Vector3(_input.InputVector.x, 0, _input.InputVector.y);
         var movementVector = MoveTowardTarget(targetVector);
