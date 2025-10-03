@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Test
   m_EditorClassIdentifier: 
   dialogue:
-  - Jesse.....
-  - Why are you blue??????????????????????????
+  - What is wrong with you...
+  - Why are you blue??
   responses:
-  - responseText: Yes
+  - responseText: uhhhh??
     dialogueObject: {fileID: 11400000, guid: 61be582963657d84ca9ff4821ad77621, type: 2}
-  - responseText: No
+  - responseText: Lets just say...
     dialogueObject: {fileID: 11400000, guid: 09f43414d513f774f920d0dea1dd6e59, type: 2}
