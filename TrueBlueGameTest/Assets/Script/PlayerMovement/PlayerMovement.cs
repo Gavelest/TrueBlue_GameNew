@@ -69,7 +69,14 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 MoveTowardTarget(Vector3 targetVector)
     {
-        var speed = MovementSpeed * Time.deltaTime;
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            var speed = MovementSpeed * 5f * Time.deltaTime;
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            var speed = MovementSpeed * Time.deltaTime;
+        }
         // transform.Translate(targetVector * (MovementSpeed * Time.deltaTime)); Demonstrate why this doesn't work
         //transform.Translate(targetVector * (MovementSpeed * Time.deltaTime), Camera.gameObject.transform);
 
