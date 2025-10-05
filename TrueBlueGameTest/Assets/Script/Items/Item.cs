@@ -17,6 +17,12 @@ public class Item : MonoBehaviour, IInteractable
 
     private InventoryManager inventoryManager;
 
+    public void Interact(Player player)
+    {
+
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
