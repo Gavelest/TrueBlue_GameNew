@@ -9,6 +9,9 @@ public interface IInteractable
 
 public class Interactor : MonoBehaviour
 {
+
+    [SerializeField] private Player player;
+
     //this should be on the player camera
 
     public Transform InteractorSource; //stores transform for which the range will be casted on it
@@ -29,7 +32,7 @@ public class Interactor : MonoBehaviour
             {
                 if (hitInfo.collider.gameObject.TryGetComponent(out IInteractable interactObj))
                 {
-                    interactObj.Interact(SomePlayerObject);
+                    interactObj.Interact(player);
                 }
             }
         }
