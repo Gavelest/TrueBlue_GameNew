@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private Camera Camera;
 
+    public bool isSprinting = false;
+    public float sprintingMultiplier;
+
     private void Awake()
     {
         _input = GetComponent<InputHandler>();
@@ -43,7 +46,16 @@ public class PlayerMovement : MonoBehaviour
             RotateFromMouseVector();
         }
 
-
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            isSprinting = true;
+            MovementSpeed = 6f;
+        }
+        else
+        {
+            isSprinting = false;
+            MovementSpeed = 3f;
+        }
 
     }
 

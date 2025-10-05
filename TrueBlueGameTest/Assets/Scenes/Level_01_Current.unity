@@ -3493,15 +3493,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2140279793863027747, guid: 68cdf2a49e99b8848863866d6104af64, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.86
+      value: 12.3
       objectReference: {fileID: 0}
     - target: {fileID: 2140279793863027747, guid: 68cdf2a49e99b8848863866d6104af64, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 57.09
+      value: 58.265488
       objectReference: {fileID: 0}
     - target: {fileID: 2140279793863027747, guid: 68cdf2a49e99b8848863866d6104af64, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -63.86
+      value: -12.7
       objectReference: {fileID: 0}
     - target: {fileID: 2140279793863027747, guid: 68cdf2a49e99b8848863866d6104af64, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13790,6 +13790,8 @@ MonoBehaviour:
   MovementSpeed: 5
   RotationSpeed: 5
   Camera: {fileID: 358186708}
+  isSprinting: 0
+  sprintingMultiplier: 1.5
 --- !u!114 &6081295324294018684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15975,6 +15977,14 @@ PrefabInstance:
       propertyPath: m_Tangents.Array.data[8719].z
       value: NaN
       objectReference: {fileID: 0}
+    - target: {fileID: 3457717333308227072, guid: e847bc3f71ba335459d54808b1dfdf55, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 260714e9b3810294ba28972a1c1289b5, type: 2}
+    - target: {fileID: 5834244086309432700, guid: e847bc3f71ba335459d54808b1dfdf55, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cec88b077c2359c42ae64dd2de21b893, type: 2}
     - target: {fileID: 6777939743109109470, guid: e847bc3f71ba335459d54808b1dfdf55, type: 3}
       propertyPath: m_Name
       value: ===== LEVEL =====
