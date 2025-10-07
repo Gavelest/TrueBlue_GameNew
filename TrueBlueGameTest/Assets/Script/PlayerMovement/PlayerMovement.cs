@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         //if (dialogueUI.IsOpen) return;
 
-        var targetVector = new Vector3(_input.InputVector.x, 0, _input.InputVector.y);
+        var targetVector = new Vector3(_input.InputVector.x, 0, _input.InputVector.y).normalized;
         var movementVector = MoveTowardTarget(targetVector);
 
         if (!RotateTowardMouse)
@@ -56,6 +56,7 @@ public class PlayerMovement : MonoBehaviour
             isSprinting = false;
             MovementSpeed = 3f;
         }
+
 
     }
 
