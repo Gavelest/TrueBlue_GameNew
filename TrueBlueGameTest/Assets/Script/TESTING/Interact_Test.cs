@@ -19,6 +19,11 @@ public class Interact_Test : MonoBehaviour
                 {
                     hit.collider.transform.GetComponent<TeleScript>().UseTele();
                 }
+
+                if (hit.collider.CompareTag("Objective"))
+                {
+                    hit.collider.transform.GetComponent<keyScript>().UseKey();
+                }
             }
         }  
     }

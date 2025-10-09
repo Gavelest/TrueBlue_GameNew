@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfcc9203b76df4842a296a8527153d2c, type: 3}
-  m_Name: No
+  m_Name: GateDialogue
   m_EditorClassIdentifier: 
   dialogue:
-  - You said no
+  - I need a key to unlock this.
   responses: []

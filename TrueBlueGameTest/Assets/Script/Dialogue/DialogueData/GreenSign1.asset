@@ -10,13 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfcc9203b76df4842a296a8527153d2c, type: 3}
-  m_Name: Test
+  m_Name: GreenSign1
   m_EditorClassIdentifier: 
   dialogue:
-  - What is wrong with you...
-  - Why are you blue??
-  responses:
-  - responseText: uhhhh??
-    dialogueObject: {fileID: 11400000, guid: 61be582963657d84ca9ff4821ad77621, type: 2}
-  - responseText: Lets just say...
-    dialogueObject: {fileID: 11400000, guid: 09f43414d513f774f920d0dea1dd6e59, type: 2}
+  - It's a long way before the next town, I should use my resources wisely.
+  responses: []

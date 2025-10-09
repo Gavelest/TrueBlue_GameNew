@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cfcc9203b76df4842a296a8527153d2c, type: 3}
-  m_Name: Yes
+  m_Name: Cannot_EnterScript
   m_EditorClassIdentifier: 
   dialogue:
-  - 'You said yes
-
-'
-  responses: []
+  - The door is locked.
+  responses:
+  - responseText: 
+    dialogueObject: {fileID: 0}
+  - responseText: 
+    dialogueObject: {fileID: 0}
