@@ -9,7 +9,7 @@ public class Interact_Test : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown("Interact")) //KeyCode.E 
         {
             Ray ray = new Ray(transform.position, transform.forward);
             RaycastHit hit;
