@@ -17,16 +17,10 @@ public class Interactor : MonoBehaviour
     public Transform InteractorSource; //stores transform for which the range will be casted on it
     public float InteractRange; //stores range
 
-    // Start is called before the first frame update
-    void Start()
+    public void PickUpItem()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetButtonDown("Interact")) {
+        if (Input.GetKeyDown(KeyCode.E)) 
+        {
             Ray r = new Ray(InteractorSource.position, InteractorSource.forward);
             if (Physics.Raycast(r, out RaycastHit hitInfo, InteractRange))
             {
