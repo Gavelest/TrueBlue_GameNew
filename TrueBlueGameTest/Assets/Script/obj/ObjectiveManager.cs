@@ -7,7 +7,7 @@ using System;
 
 
 
-public class ObjectiveManager
+public class ObjectiveManager : MonoBehaviour
     {
        
         public Action<Objective> OnObjectiveAdded; public List<Objective> Objectives { get; } = new();

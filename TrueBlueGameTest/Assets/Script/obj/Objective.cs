@@ -5,36 +5,40 @@ using UnityEngine.Events;
 using UnityEngine.UI;
 using System;
 
-public class Objective
+public abstract class Objective : MonoBehaviour
 {
     // Invoked when the objective is completed
     public Action OnComplete;
     // Invoked when the objective's progress changes
     public Action OnValueChange;  // Used to AddProgress from ObjectiveManager.
                                   // Can be empty if objective progress is managed elsewhere.
-    public string EventTrigger { get; }
+    [field:SerializeField] public string EventTrigger { get; protected set;}
     public bool IsComplete { get; private set; }
-    public int MaxValue { get; }
+    [field:SerializeField] public int MaxValue { get; protected set;}
     public int CurrentValue { get; private set; }
-    private readonly string _statusText;  // Status text can have 2 parameters {0} and {1} for current and max value
+    [field:SerializeField] public string Status { get; protected set;}  // Status text can have 2 parameters {0} and {1} for current and max value
                                           // Example: "Kill {0} of {1} enemies"
-    public Objective(string eventTrigger, string statusText, int maxValue)
+  
+    protected abstract void OnInitializeObjective();
+
+    protected abstract void OnObjectiveUpdated();
+
+    protected abstract void OnObjectiveCompleted();
+
+    private void Start() 
     {
-        EventTrigger = eventTrigger;
-        _statusText = statusText;
-        MaxValue = maxValue;
+        MainManager.Instance.ObjectiveManager.AddObjective(this);
+        OnInitializeObjective();
     }
-    public Objective(string statusText, int maxValue) : this("", statusText, maxValue) 
-    {
-        
-    
-    }
+
+
     private void CheckCompletion()
     {
         if (CurrentValue >= MaxValue)
         {
             IsComplete = true;
             OnComplete?.Invoke();
+            OnObjectiveCompleted();
         }
     }
     public void AddProgress(int value)
@@ -50,9 +54,19 @@ public class Objective
         }
         OnValueChange?.Invoke();
         CheckCompletion();
+        OnObjectiveUpdated();
     }
     public string GetStatusText()
     {
-        return string.Format(_statusText, CurrentValue, MaxValue);
+        return string.Format(Status, CurrentValue, MaxValue);
     }
+
+
+    protected virtual void OnDestroy() 
+    {
+        MainManager.Instance.ObjectiveManager.Objectives.Remove(this);
+    }
+
 }
+
+

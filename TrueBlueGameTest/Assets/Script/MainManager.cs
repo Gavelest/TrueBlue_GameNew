@@ -5,17 +5,20 @@ using UnityEngine;
 public class MainManager : MonoBehaviour
 {
     public static MainManager Instance;
+    public ObjectiveManager ObjectiveManager {get; private set;}
 
     private void Awake()
     {
-        if (Instance != null) ;
+        if (Instance != null)
         {
             Destroy(gameObject);
             return;
         }
 
-            Instance = this;
+        Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        ObjectiveManager = GetComponent<ObjectiveManager>();
     }
 
 
