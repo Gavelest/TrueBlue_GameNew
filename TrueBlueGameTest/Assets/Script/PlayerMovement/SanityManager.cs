@@ -34,7 +34,7 @@ public class SanityManager : MonoBehaviour
             while(sanitySlider.value > 0)
             {
 
-                sanitySlider.value -= 0.01f * difficulty;
+                sanitySlider.value -= 0.001f * difficulty;
                 float newValue = (sanitySlider.value - sanitySlider.maxValue) * -1;
                 percent = newValue / sanitySlider.maxValue;
                 //vignette.intensity.value = percent;
