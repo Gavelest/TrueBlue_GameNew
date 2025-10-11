@@ -6,6 +6,13 @@ TagManager:
   tags:
   - Enemy
   - Hero
+  - portal
+  - Objective
+  - Bullet
+  - Item
+  - enemy
+  - Fight
+  - KeyPad
   layers:
   - Default
   - TransparentFX

@@ -15,9 +15,11 @@ public class Interact_Test : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, interactDistance))
             {
+
+
                 if (hit.collider.CompareTag("portal"))
                 {
-                    hit.collider.transform.GetComponent<TeleScript>().UseTele();
+                   hit.collider.transform.GetComponent<TeleScript>().UseTele();
                 }
 
                 if (hit.collider.CompareTag("Objective"))
@@ -28,6 +30,12 @@ public class Interact_Test : MonoBehaviour
                 if (hit.collider.CompareTag("Item"))
                 {
                     hit.collider.transform.GetComponent<Item>().Interact();
+                }
+
+
+                if (hit.collider.CompareTag("KeyPad"))
+                {
+                    hit.collider.transform.GetComponent<Keypad>().KeypadScreen();
                 }
 
             }

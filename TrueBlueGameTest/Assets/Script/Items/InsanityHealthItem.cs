@@ -6,6 +6,8 @@ using UnityEngine;
 
 namespace TrueBlueGameTest.Assets.Script.Items
 {
+
+
     [CreateAssetMenu(fileName = "Insanity Heal Item", menuName = "True Blue/Items/InsanityHealItem")]
     public class InsanityHealthItem : ItemData
     {
@@ -21,6 +23,9 @@ namespace TrueBlueGameTest.Assets.Script.Items
 
     
 }
+
+
+
 
 //public override bool UseItem() //make it so the the player can't heal if they are full
 //{
