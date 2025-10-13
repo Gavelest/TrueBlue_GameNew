@@ -20,6 +20,7 @@ public class Interact_Test : MonoBehaviour
                 if (hit.collider.CompareTag("portal"))
                 {
                    hit.collider.transform.GetComponent<TeleScript>().UseTele();
+                    Debug.Log("Portal");
                 }
 
                 if (hit.collider.CompareTag("Objective"))
@@ -35,7 +36,8 @@ public class Interact_Test : MonoBehaviour
 
                 if (hit.collider.CompareTag("KeyPad"))
                 {
-                    hit.collider.transform.GetComponent<Keypad>().KeypadScreen();
+                    hit.collider.GetComponent<Keypad>().KeypadScreen();
+                    Debug.Log("code");
                 }
 
             }
