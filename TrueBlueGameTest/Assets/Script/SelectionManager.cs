@@ -1,20 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class SelectionManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private string selectableTag = "Selectable";
+    [SerializeField] private Material highlightMaterial;
+    [SerializeField] private Material defaultMaterial;
+
+    private Transform _selection;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+
+        if (_selection == null)
+        {
+            var selectionRenderer = _selection.GetComponent<Renderer>();
+            selectionRenderer.material = defaultMaterial;
+            _selection = null;
+        }
+
+        Ray ray = new Ray(transform.position, transform.forward);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+
+            hit.transform.SendMessage("HitByRay");
+
+            var selection = hit.transform;
+            if (selection.CompareTag(selectableTag))
+            {
+                var selectionRenderer = selection.GetComponent<Renderer>();
+                if (selectionRenderer == null)
+                {
+                    selectionRenderer.material = highlightMaterial;
+                }
+
+                _selection = selection;
+            }
+        }
     }
 }
 
-//Currently going off of https://www.youtube.com/watch?v=_yf5vzZ2sYE
+//i've tried like almost 10 different things i give up for now lol 

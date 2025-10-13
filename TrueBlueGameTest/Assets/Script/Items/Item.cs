@@ -32,7 +32,7 @@ public class Item : MonoBehaviour, IInteractable
     public void Interact()
     {
             Debug.Log("I've been picked up!");
-            int leftOverItems = inventoryManager.AddItem(heldItem, quantity); // Originally ItemObject in the tutorial was a sprite, same for above. Will likely change to sprite when I figure out how the fuck that shit works lmao
+            int leftOverItems = inventoryManager.AddItem(heldItem, quantity); 
             Debug.Log(leftOverItems);
             if (leftOverItems <= 0)
                 Destroy(gameObject); // Destroys item object when no more left
@@ -42,5 +42,6 @@ public class Item : MonoBehaviour, IInteractable
 
 }
 
+//when making new items please make sure their colliders are in the floor due to the raycast being below the feet of the character
 
 
