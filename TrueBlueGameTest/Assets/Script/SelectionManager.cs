@@ -30,6 +30,7 @@ public class SelectionManager : MonoBehaviour
             hit.transform.SendMessage("HitByRay");
 
             var selection = hit.transform;
+            
             if (selection.CompareTag(selectableTag))
             {
                 var selectionRenderer = selection.GetComponent<Renderer>();
@@ -40,6 +41,7 @@ public class SelectionManager : MonoBehaviour
 
                 _selection = selection;
             }
+            
         }
     }
 }
