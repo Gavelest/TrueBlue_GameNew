@@ -42,7 +42,7 @@ public class Interact_Test : MonoBehaviour
 
                 if (hit.collider.CompareTag("KeyPad"))
                 {
-                    hit.collider.GetComponent<Keypad>().KeypadScreen();
+                    hit.collider.transform.GetComponent<Keypad>().KeypadScreen();
                     Debug.Log("code");
                 }
 
