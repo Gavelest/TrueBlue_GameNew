@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfcc9203b76df4842a296a8527153d2c, type: 3}
+  m_Name: Farmer
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Don't come in.
+  - "I am bleeding everywhere \nand that damn dog can smell \nme dying."
+  - Whatever you do, don't trust that mutt.
+  - 'I can''t go on much longer, please
+
+    take the key from my room and escape.'
+  - Have you listened to the radio?
+  responses:
+  - responseText: Yes
+    dialogueObject: {fileID: 11400000, guid: c8d006fe8262a8e43bf98da344927595, type: 2}
+  - responseText: No
+    dialogueObject: {fileID: 11400000, guid: 3c10f0ac9fdb28742ada7f9300b3e2e5, type: 2}

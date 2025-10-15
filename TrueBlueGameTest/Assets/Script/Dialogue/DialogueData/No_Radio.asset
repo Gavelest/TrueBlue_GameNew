@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfcc9203b76df4842a296a8527153d2c, type: 3}
+  m_Name: No_Radio
+  m_EditorClassIdentifier: 
+  dialogue:
+  - 'This storm, it''s plaguing our land.
+
+    The animals have gone rabid, the humans
+    too.'
+  - 'You must find a boat and leave this damned country. '
+  - The only salvation we have is out on the seas.
+  - "Leave me here, I'm going to die and I cannot \nhave that mutt following you
+    out of here."
+  - Good luck.
+  responses: []
