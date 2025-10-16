@@ -13,7 +13,7 @@ public class Keypad : MonoBehaviour
     public string input;
     public TMP_Text displayText;
 
-    private bool keypadScreen;
+    //private bool keypadScreen;
     private float btnClicked = 0;
     private float numOfGuesses;
 
@@ -53,7 +53,7 @@ public class Keypad : MonoBehaviour
 
     public void KeypadScreen()
     {
-        keypadScreen = true;
+        //keypadScreen = true;
 
         
         objectToEnable.SetActive(true);
@@ -67,7 +67,7 @@ public class Keypad : MonoBehaviour
         {
             case "Q":
                 btnClicked = 0;
-                keypadScreen = false;
+                //keypadScreen = false;
                 input = "";
                 displayText.text = input.ToString();
                 break;

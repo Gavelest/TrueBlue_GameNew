@@ -8,6 +8,7 @@ public class HousesObjective : Objective
     private Objective myObjective;
 
     public List<TeleScript> houseTeleports = new();
+    public GameObject invisWall;
 
 
     protected override void OnInitializeObjective()
@@ -28,6 +29,8 @@ public class HousesObjective : Objective
     protected override void OnObjectiveCompleted()
     {
         Debug.Log("Completed!");
+        invisWall.SetActive(false);
+
         
     }
 

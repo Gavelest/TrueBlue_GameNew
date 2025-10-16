@@ -10347,6 +10347,7 @@ GameObject:
   - component: {fileID: 1253796719}
   - component: {fileID: 1253796718}
   - component: {fileID: 1253796720}
+  - component: {fileID: 1253796721}
   m_Layer: 0
   m_Name: MainManager
   m_TagString: Untagged
@@ -10391,6 +10392,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1158dc243e35f384dac44c05d435c7f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1253796721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253796717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ecc7358e3f17b4ba9a6b4145241863, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1255061650 stripped
@@ -13533,6 +13546,7 @@ MonoBehaviour:
   <Status>k__BackingField: Searched {0} of {1} houses
   houseTeleports:
   - {fileID: 108911400}
+  invisWall: {fileID: 0}
 --- !u!4 &1639223173
 Transform:
   m_ObjectHideFlags: 0
@@ -14212,7 +14226,7 @@ GameObject:
   - component: {fileID: 1706582480}
   - component: {fileID: 1706582481}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: SanitySlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

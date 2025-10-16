@@ -13,6 +13,7 @@ public class SanityManager : MonoBehaviour
     public int fullSanity;
     public int difficulty;
     float percent;
+    private AudioClip lowSanityClip;
 
     public UnityEvent onInsane;
     
@@ -25,6 +26,18 @@ public class SanityManager : MonoBehaviour
         //vignette.Intensity.value = 0;
 
         StartCoroutine(LoseSanity());
+    }
+
+    void Update()
+    {
+        /*
+        if(sanitySlider.value => 25f)
+        {
+            SoundFXManager.instance.PlaySoundFXClip(lowSanityClip, transform, 1f);
+
+        }
+        */
+
     }
 
    
