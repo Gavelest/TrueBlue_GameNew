@@ -10,6 +10,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private TMP_Text healthText; 
     public int maxHealth = 100;
     int currentHealth;
+
+    private void Awake()
+    {
+        MainManager.Instance.PlayerController = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +32,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void ChangeHealth(int amount)
+    //Returns the change in health value
+    public int ChangeHealth(int amount)
     {
-
+        var old = currentHealth;
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         healthText.text = $"{currentHealth} / {maxHealth}";
+        return currentHealth - old;
     }
 
     private void OnCollisionEnter(Collision other)

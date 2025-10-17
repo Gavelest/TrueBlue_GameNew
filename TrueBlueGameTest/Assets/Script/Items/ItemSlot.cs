@@ -46,6 +46,11 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
+    private void Update()
+    {
+        itemImage.enabled = itemImage.sprite != null;
+    }
+
     public int AddItem(ItemData item, int quantity) //m
     {
         //Check to see if slot is full
@@ -76,6 +81,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
         //Update Inventory Item Slot Image
         itemImage.sprite = heldItem.slotIcon;
+        
         return 0;
 
     }
@@ -125,6 +131,7 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
             {
                 ItemDescriptionText.text = heldItem.description;
                 itemDescriptionImage.sprite = heldItem.icon; //shit
+                itemDescriptionImage.enabled = true;
             }
             else
             {
@@ -139,9 +146,11 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
     {
         quantityText.enabled = false;
         itemImage.sprite = null; //null makes it white erm oops
+
         ItemDescriptionNameText.text = "";
         ItemDescriptionText.text = "";
         itemDescriptionImage.sprite = null;
+        
     }
 
     public void OnRightClick()

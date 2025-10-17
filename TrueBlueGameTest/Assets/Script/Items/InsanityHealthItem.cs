@@ -17,6 +17,7 @@ namespace TrueBlueGameTest.Assets.Script.Items
         //make it so the the player can't heal if they are full
         public override bool UseItem()
         {
+            MainManager.Instance.SanityManager.AffectSanity(InsanityhealAmount);
             return true;
         }
     }

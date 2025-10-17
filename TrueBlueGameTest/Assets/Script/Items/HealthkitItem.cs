@@ -18,7 +18,8 @@ namespace TrueBlueGameTest.Assets.Script.Items
         //make it so the the player can't heal if they are full
         public override bool UseItem()
         {
-            return base.UseItem();
+            var healthChange = MainManager.Instance.PlayerController.ChangeHealth(healAmount);
+            return healthChange > 0;
         }
     }
 }

@@ -27,6 +27,8 @@ public class InventoryManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        descriptionImage.enabled = descriptionImage.sprite != null;
+
         if (Input.GetButtonDown("Inventory") && menuActivated) //activates and deactivates menu when hitting the inventory button
         {
             Time.timeScale = 1; //starts time

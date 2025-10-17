@@ -7,16 +7,24 @@ using UnityEngine.Events;
 
 public class SanityManager : MonoBehaviour
 {
+
+    
     //public PostProcessProfile profile;
     //Vignette vignette;
     Slider sanitySlider; 
     public int fullSanity;
     public int difficulty;
-    float percent;
+    private float percent;
     private AudioClip lowSanityClip;
 
     public UnityEvent onInsane;
     
+
+    private void Awake()
+    {
+        MainManager.Instance.SanityManager = this;
+    }
+
     void Start()
     {
         //profile.TryGetSettings(out vignette);

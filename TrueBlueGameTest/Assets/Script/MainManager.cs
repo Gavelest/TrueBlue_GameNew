@@ -6,6 +6,8 @@ public class MainManager : MonoBehaviour
 {
     public static MainManager Instance;
     public ObjectiveManager ObjectiveManager {get; private set;}
+    public SanityManager SanityManager {get;  set;}
+    public PlayerController PlayerController {get; set;}
 
     private void Awake()
     {
