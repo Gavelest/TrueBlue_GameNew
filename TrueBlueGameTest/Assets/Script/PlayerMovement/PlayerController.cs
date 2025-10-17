@@ -11,13 +11,11 @@ public class PlayerController : MonoBehaviour
     public int maxHealth = 100;
     int currentHealth;
 
-    private void Awake()
-    {
-        MainManager.Instance.PlayerController = this;
-    }
+
     // Start is called before the first frame update
     void Start()
     {
+        MainManager.Instance.PlayerController = this;
         currentHealth = maxHealth;
     }
 

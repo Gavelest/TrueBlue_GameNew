@@ -7,9 +7,9 @@ public class CameraController : MonoBehaviour {
     public float followDistance;
     public Quaternion rotation;
     
-    private void Update() {
-        Vector3 pos = Vector3.Lerp(transform.position, player.position + offset + -transform.forward * followDistance, moveSpeed * Time.deltaTime);
-        transform.position = pos;
+    private void LateUpdate() {
+        //Vector3 pos = Vector3.Lerp(transform.position, player.position + offset + -transform.forward * followDistance, moveSpeed * Time.deltaTime);
+        transform.position = player.position + offset + -transform.forward * followDistance;
 
         //transform.rotation = rotation;
     }

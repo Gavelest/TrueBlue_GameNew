@@ -7,6 +7,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private InputHandler _input;
+    private Rigidbody _playerRigidbody;
 
     //[SerializeField] private DialogueUI dialogueUI;
 
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         _input = GetComponent<InputHandler>();
+        _playerRigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -60,6 +62,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void FixedUpdate()
+    {
+        Debug.Log($"Velocity : {_playerRigidbody.velocity}");
+    }
+
     private void RotateFromMouseVector()
     {
         if (Time.timeScale == 0)
@@ -85,14 +92,16 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 MoveTowardTarget(Vector3 targetVector)
     {
        
-            var speed = MovementSpeed * Time.deltaTime;
+            var speed = MovementSpeed;
         
         // transform.Translate(targetVector * (MovementSpeed * Time.deltaTime)); Demonstrate why this doesn't work
         //transform.Translate(targetVector * (MovementSpeed * Time.deltaTime), Camera.gameObject.transform);
 
         targetVector = Quaternion.Euler(0, Camera.gameObject.transform.rotation.eulerAngles.y, 0) * targetVector;
-        var targetPosition = transform.position + targetVector * speed;
-        transform.position = targetPosition;
+        //var targetPosition = transform.position + targetVector * speed;
+        //transform.position = targetPosition;
+        Debug.Log( targetVector * speed);
+        _playerRigidbody.velocity = targetVector * speed;
         return targetVector;
     }
 
