@@ -2,11 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using TrueBlueGameTest.Assets.Script.Items;
 using UnityEngine;
+using System;
+
+    
+
 
 public class Item : MonoBehaviour, IInteractable
 {
     [SerializeField]
     private ItemData heldItem;
+
+    public Action onItemPickup;
+    public Action onFirstPickup;
+
+    private bool hasBeenPickedUp;
 
 
     [SerializeField]
@@ -38,6 +47,14 @@ public class Item : MonoBehaviour, IInteractable
                 Destroy(gameObject); // Destroys item object when no more left
             else
                 quantity = leftOverItems;
+
+            onItemPickup?.Invoke();
+            if (!hasBeenPickedUp)
+            {
+                hasBeenPickedUp = true;
+                onFirstPickup?.Invoke();
+            }
+
     }
 
 }

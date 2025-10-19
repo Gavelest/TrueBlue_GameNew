@@ -14965,6 +14965,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1639223173}
   - component: {fileID: 1639223172}
+  - component: {fileID: 1639223174}
   m_Layer: 0
   m_Name: Objective
   m_TagString: Untagged
@@ -15005,6 +15006,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1639223174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639223171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 110b229a247bfb14bb364dfa40703c05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <EventTrigger>k__BackingField: Pickup Items
+  <MaxValue>k__BackingField: 0
+  <Status>k__BackingField: Pickedup {0} of {1} items
+  itemsGrabbed:
+  - {fileID: 333182406}
 --- !u!1 &1642544923
 GameObject:
   m_ObjectHideFlags: 0
