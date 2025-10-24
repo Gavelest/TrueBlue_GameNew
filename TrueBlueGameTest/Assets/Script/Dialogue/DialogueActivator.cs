@@ -1,8 +1,14 @@
 using UnityEngine;
+using System;
 
 public class DialogueActivator : MonoBehaviour, IInteractable
 {
     [SerializeField] private DialogueObject dialogueObject;
+
+    public Action onPlayerSpeaking;
+    public Action onPlayerFirstSpokenToo;
+
+    private bool hasTalked = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,5 +32,12 @@ public class DialogueActivator : MonoBehaviour, IInteractable
     public void Interact(Player player)
     {
         player.DialogueUI.ShowDialogue(dialogueObject);
+
+        onPlayerSpeaking?.Invoke();
+        if (!hasTalked)
+        {
+            hasTalked = true;
+            onPlayerFirstSpokenToo?.Invoke();
+        }
     }
 }
