@@ -2180,7 +2180,7 @@ GameObject:
   - component: {fileID: 290881516}
   m_Layer: 0
   m_Name: ===== TESTING =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2208,7 +2208,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1352
+  m_Name: pb_Mesh-3326
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2644,7 +2644,7 @@ GameObject:
   - component: {fileID: 329422804}
   m_Layer: 0
   m_Name: ===== INVIS WALL =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3120,7 +3120,7 @@ GameObject:
   - component: {fileID: 415190640}
   m_Layer: 0
   m_Name: ===== DIALOGUE =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3314,7 +3314,7 @@ GameObject:
   - component: {fileID: 430902970}
   m_Layer: 0
   m_Name: ===== ENEMIES =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3940,7 +3940,7 @@ GameObject:
   - component: {fileID: 489384721}
   m_Layer: 0
   m_Name: ===== PLAYER =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6596,7 +6596,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1366
+  m_Name: pb_Mesh-3340
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -7489,7 +7489,7 @@ GameObject:
   - component: {fileID: 890368603}
   m_Layer: 0
   m_Name: ==== OBJECTIVES ====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8012,7 +8012,7 @@ GameObject:
   - component: {fileID: 917111458}
   m_Layer: 0
   m_Name: ===== CANVAS =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9912,7 +9912,7 @@ GameObject:
   - component: {fileID: 1126355643}
   m_Layer: 0
   m_Name: ===== INTERIORS =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10345,7 +10345,7 @@ GameObject:
   - component: {fileID: 1182978733}
   m_Layer: 0
   m_Name: ===== INVENTORY =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11641,7 +11641,7 @@ GameObject:
   - component: {fileID: 1316617904}
   m_Layer: 0
   m_Name: ==== TELEPORT =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12107,7 +12107,7 @@ GameObject:
   - component: {fileID: 1370364674}
   m_Layer: 0
   m_Name: ===== INTERACTABLES =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13293,7 +13293,7 @@ GameObject:
   - component: {fileID: 1481921494}
   m_Layer: 0
   m_Name: ===== LIGHTING =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13453,7 +13453,7 @@ GameObject:
   - component: {fileID: 1489693111}
   m_Layer: 0
   m_Name: ===== GENERAL =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14594,7 +14594,7 @@ GameObject:
   - component: {fileID: 1609568570}
   m_Layer: 0
   m_Name: ===== AUDIO =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15003,7 +15003,7 @@ GameObject:
   - component: {fileID: 1642544924}
   m_Layer: 0
   m_Name: ===== NAVMESH =====
-  m_TagString: EditorOnly
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21546,6 +21546,10 @@ PrefabInstance:
     - target: {fileID: 6777939743109109470, guid: e847bc3f71ba335459d54808b1dfdf55, type: 3}
       propertyPath: m_Name
       value: ===== LEVEL =====
+      objectReference: {fileID: 0}
+    - target: {fileID: 6777939743109109470, guid: e847bc3f71ba335459d54808b1dfdf55, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 6777939743109109471, guid: e847bc3f71ba335459d54808b1dfdf55, type: 3}
       propertyPath: m_RootOrder
