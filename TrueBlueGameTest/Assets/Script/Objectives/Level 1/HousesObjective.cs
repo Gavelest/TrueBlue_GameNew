@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class HousesObjective : Objective
 {
@@ -9,6 +10,8 @@ public class HousesObjective : Objective
 
     public List<TeleScript> houseTeleports = new();
     public GameObject invisWall;
+
+    public  TMP_Text objectiveText; 
 
 
     protected override void OnInitializeObjective()
@@ -30,6 +33,7 @@ public class HousesObjective : Objective
     {
         Debug.Log("Completed!");
         invisWall.SetActive(false);
+        objectiveText.enabled = false;
 
         
     }
