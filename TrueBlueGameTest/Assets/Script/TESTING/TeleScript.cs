@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 
-public class TeleScript : MonoBehaviour
+public class TeleScript : MonoBehaviour, IInteractable
 {
-   public GameObject Player;
    public Vector3 TeleportDestination;
    
     public Action OnPlayerTeleported;
@@ -13,9 +12,9 @@ public class TeleScript : MonoBehaviour
 
     private bool hasTeleported;
 
-    public void UseTele()
+    public void Interact(Player player)
     {
-        Player.transform.position = TeleportDestination;
+        player.transform.position = TeleportDestination;
         Debug.Log("TELEPORT");
         
         OnPlayerTeleported?.Invoke();

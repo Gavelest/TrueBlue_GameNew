@@ -11,7 +11,7 @@ public class dialogueObjective : Objective
 
     protected override void OnInitializeObjective()
     {
-        foreach (DialogueActivator t in spokenToo) //subscribe to all teleporters activating for the first time
+        foreach (DialogueActivator t in spokenToo) //subscribe to all dialogue activating for the first time
         {
             t.onPlayerFirstSpokenToo += OnFirstDialogue;
         }

@@ -29,6 +29,21 @@ public class Item : MonoBehaviour, IInteractable
     public void Interact(Player player)
     {
 
+        Debug.Log("I've been picked up!");
+        int leftOverItems = inventoryManager.AddItem(heldItem, quantity); 
+        Debug.Log(leftOverItems);
+        if (leftOverItems <= 0)
+            Destroy(gameObject); // Destroys item object when no more left
+        else
+            quantity = leftOverItems;
+
+        onItemPickup?.Invoke();
+        if (!hasBeenPickedUp)
+        {
+            hasBeenPickedUp = true;
+            onFirstPickup?.Invoke();
+        }
+
 
     }
 
@@ -38,24 +53,6 @@ public class Item : MonoBehaviour, IInteractable
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>(); // Finds the Inventory Manager
     }
 
-    public void Interact()
-    {
-            Debug.Log("I've been picked up!");
-            int leftOverItems = inventoryManager.AddItem(heldItem, quantity); 
-            Debug.Log(leftOverItems);
-            if (leftOverItems <= 0)
-                Destroy(gameObject); // Destroys item object when no more left
-            else
-                quantity = leftOverItems;
-
-            onItemPickup?.Invoke();
-            if (!hasBeenPickedUp)
-            {
-                hasBeenPickedUp = true;
-                onFirstPickup?.Invoke();
-            }
-
-    }
 
 }
 

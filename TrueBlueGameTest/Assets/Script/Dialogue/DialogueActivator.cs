@@ -10,11 +10,13 @@ public class DialogueActivator : MonoBehaviour, IInteractable
 
     private bool hasTalked = false;
 
+/*
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && other.TryGetComponent(out Player player))
         {
             player.Interactable = this;
+            Debug.Log("Talking");
         }
     }
 
@@ -25,12 +27,15 @@ public class DialogueActivator : MonoBehaviour, IInteractable
             if (player.Interactable is DialogueActivator dialogueActivator && dialogueActivator == this)
             {
                 player.Interactable = null;
+                Debug.Log("Talking");
             }
         }
     }
+    */
 
     public void Interact(Player player)
     {
+       
         player.DialogueUI.ShowDialogue(dialogueObject);
 
         onPlayerSpeaking?.Invoke();

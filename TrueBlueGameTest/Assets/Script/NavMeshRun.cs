@@ -68,6 +68,7 @@ public class NavMeshRun : MonoBehaviour {
 		transform.rotation = startTransform.rotation;
 
 		// And get it to head towards the found NavMesh position
+		if(!myNMagent.isOnNavMesh) return;
 		myNMagent.SetDestination(hit.position);
 
 	}

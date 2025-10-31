@@ -2,25 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interact_Test : MonoBehaviour
+public class PlayerInteractor : MonoBehaviour
 
 {
     public float interactDistance = 5f;
 
+    private Player thisPlayer;
+
+    private void Awake() {
+        thisPlayer = GetComponent<Player>();
+    }
+
     void Update()
     {
 
-        Vector3 forward = transform.TransformDirection(Vector3.forward) * 10;
-        Debug.DrawRay(transform.position, forward, Color.green); //shows raycast for debugging reasons, if seeing green lines is annoying feel free to comment this out including the code above lmao
+
+        Debug.DrawRay(transform.position, transform.forward * interactDistance, Color.green); //shows raycast for debugging reasons, if seeing green lines is annoying feel free to comment this out including the code above lmao
 
         if (Input.GetKeyDown(KeyCode.E)) //KeyCode.E 
         {
-            Ray ray = new Ray(transform.position, transform.forward);
+            Ray ray = new Ray(transform.position + transform.up, transform.forward);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, interactDistance))
             {
 
+                Debug.Log($"HIT {hit.collider.gameObject.name}");
+                if(hit.collider.TryGetComponent<IInteractable>(out var interactable))
+                    interactable.Interact(thisPlayer);
+
+
+/*
                 Debug.Log($"Raycast hit object: {hit.transform.name} with tag: {hit.transform.tag}", hit.transform.gameObject); //debug shows what object is being seen by the raycast
 
                 if (hit.collider.CompareTag("portal"))
@@ -45,7 +57,7 @@ public class Interact_Test : MonoBehaviour
                     hit.collider.transform.GetComponent<Keypad>().KeypadScreen();
                     Debug.Log("code");
                 }
-
+*/
 
             }
         }  

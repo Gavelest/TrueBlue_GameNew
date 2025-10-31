@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class Keypad : MonoBehaviour
+public class Keypad : MonoBehaviour, IInteractable
 {
 
     public GameObject objectToEnable;
@@ -51,14 +51,10 @@ public class Keypad : MonoBehaviour
 
     }
 
-    public void KeypadScreen()
+    public void Interact(Player player)
     {
         //keypadScreen = true;
-
-        
         objectToEnable.SetActive(true);
-       
-
     }
 
     public void ValueEntered(string valueEntered)

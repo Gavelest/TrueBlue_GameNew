@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log($"Velocity : {_playerRigidbody.velocity}");
+        //Debug.Log($"Velocity : {_playerRigidbody.velocity}");
     }
 
     private void RotateFromMouseVector()
@@ -100,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
         targetVector = Quaternion.Euler(0, Camera.gameObject.transform.rotation.eulerAngles.y, 0) * targetVector;
         //var targetPosition = transform.position + targetVector * speed;
         //transform.position = targetPosition;
-        Debug.Log( targetVector * speed);
+        //Debug.Log( targetVector * speed);
         _playerRigidbody.velocity = targetVector * speed;
         return targetVector;
     }
