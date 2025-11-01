@@ -182,8 +182,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "How to Play\nWASD - Move \nShift - Sprint\nE - Use\nR - Relod\nRight click
-    - Shoot\nHealth is in the top left\nSanity is the red bar\n\nSearch the houses
-    to escape the town.\nThe farm holds hope."
+    - Shoot\nSpace - Progress Dialogue\nHealth is in the top left\nSanity is the
+    red bar\n\nSearch the houses to escape the town.\nThe farm holds hope."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -762,7 +762,7 @@ GameObject:
   m_IsActive: 1
 --- !u!95 &542785702
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -779,7 +779,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!212 &542785703
 SpriteRenderer:
   m_ObjectHideFlags: 0
