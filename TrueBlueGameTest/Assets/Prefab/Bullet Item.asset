@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bullet Item
   m_EditorClassIdentifier: 
   itemName: Bullet
-  description: A simple box of ammo for your handgun. Made around 1897, it's interesting
-    to still find these around.
+  description: A simple box of ammo for your handgun. (Reload with 'r') Made around
+    1897, it's interesting to still find these around.
   icon: {fileID: 21300000, guid: 2ef7d8cf762a36241a8c84c758dbb93f, type: 3}
   slotIcon: {fileID: 21300000, guid: d2292a93220574d4b92905f2f78dbf30, type: 3}

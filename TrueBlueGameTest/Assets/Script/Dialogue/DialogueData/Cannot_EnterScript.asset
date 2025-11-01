@@ -14,8 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - The door is locked.
-  responses:
-  - responseText: 
-    dialogueObject: {fileID: 0}
-  - responseText: 
-    dialogueObject: {fileID: 0}
+  responses: []
